@@ -1,49 +1,120 @@
 <!DOCTYPE html>
 {%- assign bn = false -%}
 {%- if page.lang == "bn" -%}{%- assign bn = true -%}{%- endif -%}
+{%- if bn -%}
+  {%- assign home = "/bn/" -%}{%- assign other_home = "/" -%}
+  {%- assign description = page.description | default: site.description_bn -%}
+{%- else -%}
+  {%- assign home = "/" -%}{%- assign other_home = "/bn/" -%}
+  {%- assign description = page.description | default: site.description -%}
+{%- endif -%}
+{%- assign switch_to = page.alternate | default: other_home -%}
+{%- if page.title == site.title -%}{%- assign full_title = site.title -%}{%- else -%}{%- capture full_title %}{{ page.title }} · {{ site.title }}{% endcapture -%}{%- endif %}
 <html lang="{{ page.lang | default: site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
-  <title>{% if page.title == site.title %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {%- if page.alternate %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url }}{{ page.url }}">
   <link rel="alternate" hreflang="{% if bn %}en{% else %}bn{% endif %}" href="{{ site.url }}{{ page.alternate }}">
   {%- endif %}
+  <meta name="theme-color" content="#fffbff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1111" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LiquidLyf">
+  <meta property="og:title" content="{{ page.share_title | default: full_title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/share-{% if bn %}bn{% else %}en{% endif %}.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{% if bn %}LiquidLyf: রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন{% else %}LiquidLyf: Need blood? Find donors near you{% endif %}">
+  <meta property="og:locale" content="{% if bn %}bn_BD{% else %}en_US{% endif %}">
+  <meta property="og:locale:alternate" content="{% if bn %}en_US{% else %}bn_BD{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
+<body class="{% if page.home %}page-home{% else %}page-doc{% endif %}">
   <a class="skip" href="#main">{% if bn %}মূল লেখায় যান{% else %}Skip to content{% endif %}</a>
-  <header class="wrap site-header">
-    <a class="brand" href="{% if bn %}/bn/{% else %}/{% endif %}">
-      <picture>
-        <source srcset="/assets/logo-full-dark.svg" media="(prefers-color-scheme: dark)">
-        <img src="/assets/logo-full.svg" alt="LiquidLyf" width="120" height="86">
-      </picture>
-    </a>
+  <header class="site-header">
+    <div class="wide bar">
+      <a class="brand" href="{{ home }}">
+        <picture>
+          <source srcset="/assets/logo-horizontal-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="/assets/logo-horizontal.svg" alt="LiquidLyf" width="142" height="30">
+        </picture>
+      </a>
+      <nav class="site-nav" aria-label="{% if bn %}প্রধান মেনু{% else %}Main menu{% endif %}">
+        {%- if bn %}
+        <a href="/bn/#how">কীভাবে কাজ করে</a>
+        <a href="/bn/#safety">নিরাপত্তা</a>
+        <a href="/bn/#faq">প্রশ্নোত্তর</a>
+        <a href="/bn/download"{% if page.url == "/bn/download" %} aria-current="page"{% endif %}>ডাউনলোড</a>
+        {%- else %}
+        <a href="/#how">How it works</a>
+        <a href="/#safety">Safety</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/download"{% if page.url == "/download" %} aria-current="page"{% endif %}>Download</a>
+        {%- endif %}
+      </nav>
+      {%- if bn %}
+      <a class="lang" href="{{ switch_to }}" hreflang="en" lang="en">English</a>
+      {%- else %}
+      <a class="lang" href="{{ switch_to }}" hreflang="bn" lang="bn">বাংলা</a>
+      {%- endif %}
+    </div>
   </header>
-  <main id="main" class="wrap">
-    {%- if bn and site.bn_reviewed != true %}
-    <p class="notice">এই বাংলা অনুবাদটি এখনো যাচাই করা হচ্ছে। দুই সংস্করণে কোনো পার্থক্য থাকলে
-      {% if page.alternate %}<a href="{{ page.alternate }}">ইংরেজি সংস্করণটি</a>{% else %}ইংরেজি সংস্করণটি{% endif %} প্রযোজ্য।</p>
-    {%- endif %}
+  {%- if bn and site.bn_reviewed != true %}
+  <div class="wrap">
+    <p class="notice">এই বাংলা লেখাটি এখনো যাচাই করা হচ্ছে। দুই ভাষার লেখায় কোনো পার্থক্য থাকলে
+      {% if page.alternate %}<a href="{{ page.alternate }}" lang="en" hreflang="en">ইংরেজিটাই</a>{% else %}ইংরেজিটাই{% endif %} মানা হবে।</p>
+  </div>
+  {%- endif %}
+  <main id="main"{% unless page.home %} class="wrap doc"{% endunless %}>
     {{ content }}
   </main>
-  <footer class="wrap site-footer">
-    {%- if bn %}
-    <p><a href="/bn/privacy">গোপনীয়তা নীতি</a> · <a href="/bn/terms">শর্তাবলি ও কমিউনিটি নির্দেশিকা</a> ·
-      <a href="/bn/delete-account">অ্যাকাউন্ট মুছে ফেলুন</a> ·
-      <a href="https://github.com/liquidlyf/LiquidLyf">সোর্স কোড</a> ·
-      যোগাযোগ: <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></p>
-    {%- else %}
-    <p><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms and Community Guidelines</a> ·
-      <a href="/delete-account">Delete your account</a> ·
-      <a href="https://github.com/liquidlyf/LiquidLyf">Source code</a> ·
-      Contact: <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></p>
-    {%- endif %}
+  <footer class="site-footer">
+    <div class="wide cols">
+      <div class="col about">
+        <img src="/assets/logo-mark.svg" alt="" width="40" height="40">
+        <p>{% if bn %}রক্তদাতা আর যাঁদের রক্ত লাগবে, তাঁদের যোগাযোগ করিয়ে দেয় ফ্রি, ওপেন সোর্স অ্যাপ LiquidLyf। স্বেচ্ছাসেবকদের হাতে তৈরি।{% else %}LiquidLyf is a free, open-source app that connects blood donors with people who need blood. Made by volunteers.{% endif %}</p>
+      </div>
+      {%- if bn %}
+      <nav class="col" aria-label="অ্যাপ">
+        <h2>অ্যাপ</h2>
+        <ul><li><a href="/bn/download">ডাউনলোড</a></li><li><a href="/bn/#how">কীভাবে কাজ করে</a></li><li><a href="/bn/#faq">প্রশ্নোত্তর</a></li></ul>
+      </nav>
+      <nav class="col" aria-label="নিয়মকানুন">
+        <h2>নিয়মকানুন</h2>
+        <ul><li><a href="/bn/privacy">গোপনীয়তা নীতি</a></li><li><a href="/bn/terms">শর্তাবলি</a></li><li><a href="/bn/delete-account">অ্যাকাউন্ট মুছে ফেলুন</a></li></ul>
+      </nav>
+      <nav class="col" aria-label="যোগাযোগ">
+        <h2>যোগাযোগ</h2>
+        <ul>{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
+      </nav>
+      {%- else %}
+      <nav class="col" aria-label="App">
+        <h2>App</h2>
+        <ul><li><a href="/download">Download</a></li><li><a href="/#how">How it works</a></li><li><a href="/#faq">FAQ</a></li></ul>
+      </nav>
+      <nav class="col" aria-label="Legal">
+        <h2>Legal</h2>
+        <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms</a></li><li><a href="/delete-account">Delete your account</a></li></ul>
+      </nav>
+      <nav class="col" aria-label="Contact">
+        <h2>Contact</h2>
+        <ul>{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
+      </nav>
+      {%- endif %}
+    </div>
+    <p class="wide fine">{% if bn %}<strong>LiquidLyf জরুরি সেবা নয়।</strong> জরুরি দরকারে হাসপাতাল বা ব্লাড ব্যাংকে যোগাযোগ করুন, অথবা ৯৯৯-এ কল করুন।{% else %}<strong>LiquidLyf is not an emergency service.</strong> In an emergency, contact the hospital or a blood bank, or call 999.{% endif %}</p>
   </footer>
 </body>
 </html>

@@ -1,0 +1,207 @@
+---
+title: LiquidLyf
+lang: en
+permalink: /
+alternate: /bn/
+home: true
+share_title: "LiquidLyf: Need blood? Find donors near you"
+description: LiquidLyf is a free Android app that alerts blood donors near the hospital in Bangladesh. Phone numbers stay private until a donor offers to help.
+---
+
+<section class="hero">
+  <div class="wide hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Free blood-donor app for Bangladesh</p>
+      <h1>Need blood? Find donors near you.</h1>
+      <p class="lead">LiquidLyf alerts blood donors near the hospital who can donate now. Phone
+        numbers stay private until a donor offers to help.</p>
+      <div class="cta">
+        {%- if site.released %}
+        <a class="btn" href="/download"><span class="ic ic-download" aria-hidden="true"></span>Download for Android</a>
+        {%- else %}
+        <a class="btn" href="/download">Coming soon</a>
+        {%- endif %}
+        {%- if site.facebook %}
+        <a class="btn-link" href="https://www.facebook.com/liquidlyf">Follow us on Facebook to know when it launches</a>
+        {%- else %}
+        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">Follow the project on GitHub</a>
+        {%- endif %}
+      </div>
+      <p class="cta-note">{% if site.released %}For Android 7.0 or newer · Free, no ads{% else %}The app is being tested and isn’t available to download yet.{% endif %}</p>
+    </div>
+    <div class="hero-art">
+      {%- if page.screenshot %}
+      <img class="phone" src="{{ page.screenshot }}" width="720" height="1600"
+        alt="The LiquidLyf home screen, showing a blood request near the user (example data)">
+      {%- else %}
+      <div class="hero-mark"><img src="/assets/logo-mark.svg" alt="" width="512" height="512"></div>
+      {%- endif %}
+    </div>
+  </div>
+  <div class="wide">
+    <aside class="emergency" aria-label="Emergencies">
+      <span class="ic ic-alert" aria-hidden="true"></span>
+      <p><strong>LiquidLyf is not an emergency service.</strong> If someone needs blood right now,
+        contact the hospital or a licensed blood bank, or call <a href="tel:999">999</a>.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="trust" aria-label="Why LiquidLyf">
+  <ul class="wide trust-list">
+    <li><span class="ic ic-gift" aria-hidden="true"></span>Free</li>
+    <li><span class="ic ic-no-ads" aria-hidden="true"></span>No ads</li>
+    <li><span class="ic ic-lock" aria-hidden="true"></span>Your number stays private</li>
+    <li><span class="ic ic-language" aria-hidden="true"></span><span><span lang="bn">বাংলা</span> and English</span></li>
+    <li><span class="ic ic-code" aria-hidden="true"></span>Open source</li>
+  </ul>
+</section>
+
+<section id="how" class="section">
+  <div class="wide">
+    <h2>How it works</h2>
+    <p class="intro">One app for both sides: people who need blood, and the donors who can give it.</p>
+    <div class="two">
+      <article class="card">
+        <h3><span class="ic ic-drop" aria-hidden="true"></span>Need blood?</h3>
+        <ol class="steps">
+          <li><span class="badge"><span class="ic ic-post" aria-hidden="true"></span></span>
+            <p><strong>Post a request.</strong> Tap <strong>Request blood</strong>, then add the
+              blood group, the hospital and when it’s needed.</p></li>
+          <li><span class="badge"><span class="ic ic-bell" aria-hidden="true"></span></span>
+            <p><strong>Donors nearby get a notification.</strong> Only donors with a matching blood
+              group near the hospital, who can donate now. If nobody responds, the search widens step
+              by step.</p></li>
+          <li><span class="badge"><span class="ic ic-phone" aria-hidden="true"></span></span>
+            <p><strong>A donor offers, and you talk directly.</strong> You see the number of each
+              donor who offers to help. Meet at the hospital.</p></li>
+        </ol>
+        <p class="more">You can also search for donors by blood group and area in
+          <strong>Find donors</strong>, and ask someone to donate.</p>
+      </article>
+      <article class="card">
+        <h3><span class="ic ic-heart" aria-hidden="true"></span>Want to donate?</h3>
+        <ol class="steps">
+          <li><span class="badge"><span class="ic ic-user-add" aria-hidden="true"></span></span>
+            <p><strong>List yourself as a donor.</strong> Add your blood group and your area. Your
+              phone number is never shown in the list.</p></li>
+          <li><span class="badge"><span class="ic ic-bell" aria-hidden="true"></span></span>
+            <p><strong>Get a notification</strong> when someone near you needs your blood group.</p></li>
+          <li><span class="badge"><span class="ic ic-calendar" aria-hidden="true"></span></span>
+            <p><strong>Offer, then donate at the hospital.</strong> Your donation goes on your profile,
+              and the app reminds you when you can donate again.</p></li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="safety" class="section alt">
+  <div class="wide">
+    <h2>Made to be safe</h2>
+    <p class="intro">You trust us with your phone number and your blood group. Here’s how LiquidLyf
+      protects you.</p>
+    <ul class="tiles">
+      <li class="tile"><span class="badge"><span class="ic ic-lock" aria-hidden="true"></span></span>
+        <h3>Your number is never public</h3>
+        <p>A requester sees a donor’s number only after the donor offers. The donor sees the request’s
+          contact only while the offer is active.</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-no-money" aria-hidden="true"></span></span>
+        <h3>Never pay for blood</h3>
+        <p>Blood donation is free. The app warns you when a request mentions money. Anyone asking for
+          bKash, Nagad or “transport costs” is a scammer: don’t pay, and report them.</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-building" aria-hidden="true"></span></span>
+        <h3>Donate only at a hospital</h3>
+        <p>Donate at a licensed hospital or blood transfusion centre, where the blood is screened.
+          Never go alone to meet a stranger anywhere else.</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-flag" aria-hidden="true"></span></span>
+        <h3>Report and block</h3>
+        <p>Report fake requests and anyone asking for money. Block people you don’t want to hear from.
+          Volunteer moderators review every report.</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-calendar" aria-hidden="true"></span></span>
+        <h3>Rest between donations</h3>
+        <p>The app counts your rest period after each donation, and sends you no alerts until you can
+          donate again.</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-shield" aria-hidden="true"></span></span>
+        <h3>Nothing hidden</h3>
+        <p>No ads, no trackers, and the code is public. The <a href="/privacy">Privacy Policy</a>
+          explains every piece of data in plain words.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="wide">
+    <h2>Questions and answers</h2>
+    <div class="faq">
+      <details>
+        <summary>Is LiquidLyf free?</summary>
+        <p>Yes. LiquidLyf is free for everyone, with no ads and nothing to buy. It’s built by
+          volunteers and runs on the free plans of Firebase and Cloudflare.</p>
+      </details>
+      <details>
+        <summary>Who can see my phone number?</summary>
+        <p>Nobody, publicly: your number isn’t on any list. When you post a request, only the donors who
+          offer to help see its contact number, and only while their offer is active. When you offer,
+          the requester sees your number. <strong>Find donors</strong> never shows anyone’s number.
+          Details are in the <a href="/privacy">Privacy Policy</a>.</p>
+      </details>
+      <details>
+        <summary>Why isn’t it on the Play Store? Is the file safe?</summary>
+        <p>For now, we publish LiquidLyf ourselves, on this website and on GitHub. It may come to the
+          Play Store later. Every genuine copy is signed with the same key, and anyone can read the
+          app’s code. Android may warn you because the app isn’t from the Play Store; that’s expected.
+          <strong>Only download it from this website or from GitHub Releases:</strong> a copy from
+          anywhere else may be fake.</p>
+      </details>
+            <details>
+        <summary>Who can donate, and how often?</summary>
+        <p>The app follows these rules for whole blood: aged 18 to 60, weighing at least 45 kg, and at
+          least 120 days (about 4 months) since your last donation. The app counts the days for you.
+          On the day, the doctor or the blood bank checks you and makes the final decision.</p>
+      </details>
+      <details>
+        <summary>How do I delete my account?</summary>
+        <p>In the app, go to <strong>Settings → Delete your account</strong>. Without the app, email
+          liquidlyf@gmail.com from your account’s email address, with “Delete my account” in the
+          subject. <a href="/delete-account">All the details</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wide two">
+    <div class="card">
+      <h2>For blood-donor clubs and organizations</h2>
+      <p>Run a blood-donor club, a hospital blood bank or an NGO? We’d like to work with you. Email
+        <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a> with “Partner” in the subject.</p>
+    </div>
+    <div class="card">
+      <h2>Help build LiquidLyf</h2>
+      <p>LiquidLyf is built by volunteers. Developers, translators, designers and testers are welcome:
+        see <a href="https://github.com/liquidlyf/LiquidLyf/blob/HEAD/CONTRIBUTING.md">how to
+        contribute</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wide">
+    {%- if site.released %}
+    <h2>Get LiquidLyf</h2>
+    <p>Free, for Android 7.0 or newer.</p>
+    <div class="cta"><a class="btn" href="/download"><span class="ic ic-download" aria-hidden="true"></span>Download for Android</a></div>
+    {%- else %}
+    <h2>Coming soon</h2>
+    <p>LiquidLyf is being tested now.{% if site.facebook %} Follow us to hear when it launches.{% endif %}</p>
+    <div class="cta">
+      {%- if site.facebook %}
+      <a class="btn" href="https://www.facebook.com/liquidlyf">Follow us on Facebook</a>
+      {%- else %}
+      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">Follow the project on GitHub</a>
+      {%- endif %}
+    </div>
+    {%- endif %}
+  </div>
+</section>

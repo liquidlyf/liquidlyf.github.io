@@ -7,19 +7,25 @@ alternate: /bn/privacy
 
 # LiquidLyf Privacy Policy
 
-**Effective date:** 15 November 2026 · [বাংলা](/bn/privacy)
+**Effective date:** 15 November 2026
 
 LiquidLyf is a free app that connects blood donors with people who need blood in Bangladesh. You trust
 us with your phone number and your blood group, so we collect as little as we can, show it to as few
 people as we can, and explain everything here in plain words.
 
-**In short:**
+<div class="glance" markdown="1">
+
+**At a glance**
 - Your phone number is **never shown publicly**. A requester sees it only if you offer to donate for
   their request, and you see a requester's number only after you offer, while your offer is active.
 - We don't sell your data, we don't show ads, and we don't use advertising or analytics trackers.
 - You can delete your account and its data at any time, in the app or by email.
 
-## 1. Who we are
+</div>
+
+<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#s1">1. Who we are</a></li><li><a href="#s2">2. What we collect</a></li><li><a href="#s3">3. Why we use it</a></li><li><a href="#s4">4. Who can see what</a></li><li><a href="#s5">5. Service providers</a></li><li><a href="#s6">6. How long we keep it</a></li><li><a href="#s7">7. Your choices and rights</a></li><li><a href="#s8">8. Security</a></li><li><a href="#s9">9. Age limit</a></li><li><a href="#s10">10. Changes to this policy</a></li><li><a href="#s11">11. Contact</a></li></ol></nav>
+
+<h2 id="s1">1. Who we are</h2>
 
 LiquidLyf is an open-source project run by volunteers. The app is published by **the LiquidLyf maintainers**
 (Bangladesh), who are responsible for your data under this policy.
@@ -29,7 +35,7 @@ LiquidLyf is an open-source project run by volunteers. The app is published by *
 The app's source code is public at <https://github.com/liquidlyf/LiquidLyf>, so anyone can check what
 it does with your data.
 
-## 2. What we collect
+<h2 id="s2">2. What we collect</h2>
 
 **When you create an account**
 - Your email address, and how you sign in (email and password, Google, or both). If you use Google, Google
@@ -76,7 +82,7 @@ it does with your data.
 **We don't collect** your contacts, photos, files, exact location, call logs or SMS messages. We never
 ask for your national ID (NID).
 
-## 3. Why we use it
+<h2 id="s3">3. Why we use it</h2>
 
 | Purpose | Data used |
 |---|---|
@@ -89,7 +95,7 @@ ask for your national ID (NID).
 
 We use your data only for these purposes. Your data is never used for advertising and never sold.
 
-## 4. Who can see what
+<h2 id="s4">4. Who can see what</h2>
 
 | Your data | Who can see it |
 |---|---|
@@ -98,8 +104,8 @@ We use your data only for these purposes. Your data is never used for advertisin
 | Phone number | Only you, **plus** the requester of a request you offered to donate for |
 | Blood group and area | Other signed-in users, if you chose to be listed as a donor or when you post or offer on a request |
 | Whether you're available to donate, and when you last used the app | Other signed-in users, if you chose to be listed as a donor. Find donors shows only available donors, and shows "Active this week" instead of a date |
-| Gender, birth year, weight answer | Only you. Others may see "can donate now" or "can donate in N days" |
-| Last donation date | Only you. Others see only "can donate now" or "in N days" |
+| Gender, birth year, weight answer | Only you. Others may see "Eligible now" or "Eligible in N days" |
+| Last donation date | Only you. Others see only "Eligible now" or "Eligible in N days" |
 | Donation history | You see all of it. Others see only how many times you donated |
 | Your badges | Only you |
 | A request's blood group, units, hospital, area, urgency and notes | Signed-in users with a verified email |
@@ -112,7 +118,7 @@ details when they need to review a report or help with a support request, and th
 **Please share only what's needed.** When you post a request for someone else, add the patient's
 name and ward only if the patient or their family agrees.
 
-## 5. Service providers
+<h2 id="s5">5. Service providers</h2>
 
 We use a few services to run LiquidLyf. They process data for us and only on our instructions.
 
@@ -133,7 +139,7 @@ Bangladesh, and each provider protects data in transit and at rest.
 We share data with authorities **only** when Bangladeshi law requires it, or to protect someone from
 serious harm.
 
-## 6. How long we keep it
+<h2 id="s6">6. How long we keep it</h2>
 
 | Data | How long |
 |---|---|
@@ -147,12 +153,13 @@ serious harm.
 | Crash reports | 90 days |
 | Earlier versions of changed or deleted data | Up to 1 hour, readable only by the project's administrators. We keep no backups |
 
-## 7. Your choices and rights
+<h2 id="s7">7. Your choices and rights</h2>
 
 - **See and correct** your profile at any time in the app.
 - **Stop being listed as a donor:** Settings → Privacy. Your donor card is removed at once, and you
   stop getting request alerts.
-- **Pause alerts:** turn off "Available to donate", or turn off notifications in Android settings.
+- **Pause alerts:** turn off "Ready to donate now" in your profile, or turn off notifications in
+  Android settings.
 - **Withdraw an offer** at any time before you donate. You then no longer see the request's contact
   details. The requester can still see the number you
   shared with that offer until it is deleted, 90 days after the request closes (section 6), and may
@@ -160,7 +167,7 @@ serious harm.
 - **Block someone:** you stop seeing their requests, and they can't ask you to donate or offer on
   your requests. If they had already offered, decline that offer, so they stop seeing your
   request's contact details. Once their donation is recorded, the offer can't be declined.
-- **Delete your account:** in the app under Settings → Delete account, or without the app at
+- **Delete your account:** in the app under Settings → Delete your account, or without the app at
   [liquidlyf.github.io/delete-account](/delete-account).
 - **Get a copy of your data,** or ask any question about it: email liquidlyf@gmail.com from the email
   address of your account. We reply within 30 days.
@@ -170,7 +177,7 @@ to get a copy of it, and to withdraw consent. If you think we have handled your 
 tell us first, so we can fix it. You can also complain to the data protection authority set up under
 that Act.
 
-## 8. Security
+<h2 id="s8">8. Security</h2>
 
 - All connections between the app, our services and Google use encryption (HTTPS/TLS).
 - Database security rules decide who may read and write each piece of data. They are public in our
@@ -182,17 +189,17 @@ No system is perfect. If a breach puts you at risk, we will tell you in the app 
 inform the authorities when the law requires it. To report a security problem, see our
 [security policy](https://github.com/liquidlyf/LiquidLyf/security/policy).
 
-## 9. Age limit
+<h2 id="s9">9. Age limit</h2>
 
 LiquidLyf is only for people aged **18 or older**. We don't knowingly collect data from children. If you
 believe a child has an account, email us and we will delete it.
 
-## 10. Changes to this policy
+<h2 id="s10">10. Changes to this policy</h2>
 
 When we change this policy, we update the effective date at the top. For important changes, the app
 asks you to read and accept the new version. Earlier versions stay in the website's public history.
 
-## 11. Contact
+<h2 id="s11">11. Contact</h2>
 
 Email **liquidlyf@gmail.com**, with "Privacy" in the subject. We reply within 30 days, usually much sooner.
 

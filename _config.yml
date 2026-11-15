@@ -3,8 +3,14 @@
 
 title: LiquidLyf
 description: A free, privacy-first app that connects blood donors with people who need blood in Bangladesh.
+description_bn: রক্তদাতা আর যাঁদের রক্ত লাগবে, তাঁদের যোগাযোগ করিয়ে দেয় ফ্রি অ্যাপ LiquidLyf। আপনার ফোন নম্বর কোথাও পাবলিক থাকে না।
 url: https://liquidlyf.github.io
 lang: en
+
+# false until P confirms that the Facebook page (facebook.com/liquidlyf) answers messages
+# automatically (project-plan/12-social-media.md, item 1). true shows the Facebook link in the footer
+# and "Follow us on Facebook" on the home page instead of GitHub.
+facebook: false
 
 # false until v1.0 is on GitHub Releases: the home page says "Coming soon", and /download is a
 # short "not available yet" page. build_site.py sets it from --released.

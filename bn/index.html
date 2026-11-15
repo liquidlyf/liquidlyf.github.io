@@ -1,0 +1,208 @@
+---
+title: LiquidLyf
+lang: bn
+permalink: /bn/
+alternate: /
+home: true
+share_title: "LiquidLyf: রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন"
+description: LiquidLyf একটা ফ্রি অ্যান্ড্রয়েড অ্যাপ। হাসপাতালের কাছের রক্তদাতাদের কাছে নোটিফিকেশন পাঠায়। কেউ রক্ত দিতে রাজি হওয়ার আগে কারও ফোন নম্বর দেখা যায় না।
+---
+
+<section class="hero">
+  <div class="wide hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">বাংলাদেশের জন্য ফ্রি রক্তদাতা অ্যাপ</p>
+      <h1>রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন</h1>
+      <p class="lead">হাসপাতালের কাছে যাঁরা এখন রক্ত দিতে পারবেন, LiquidLyf তাঁদের কাছে নোটিফিকেশন
+        পাঠায়। কেউ রক্ত দিতে রাজি হওয়ার আগে কারও ফোন নম্বর দেখা যায় না।</p>
+      <div class="cta">
+        {%- if site.released %}
+        <a class="btn" href="/bn/download"><span class="ic ic-download" aria-hidden="true"></span>অ্যান্ড্রয়েডে ডাউনলোড করুন</a>
+        {%- else %}
+        <a class="btn" href="/bn/download">শিগগিরই আসছে</a>
+        {%- endif %}
+        {%- if site.facebook %}
+        <a class="btn-link" href="https://www.facebook.com/liquidlyf">কবে আসছে জানতে Facebook-এ ফলো করুন</a>
+        {%- else %}
+        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ প্রজেক্টটি ফলো করুন</a>
+        {%- endif %}
+      </div>
+      <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% endif %}</p>
+    </div>
+    <div class="hero-art">
+      {%- if page.screenshot %}
+      <img class="phone" src="{{ page.screenshot }}" width="720" height="1600"
+        alt="LiquidLyf-এর হোম স্ক্রিন, কাছের একটি রক্তের অনুরোধসহ (উদাহরণ)">
+      {%- else %}
+      <div class="hero-mark"><img src="/assets/logo-mark.svg" alt="" width="512" height="512"></div>
+      {%- endif %}
+    </div>
+  </div>
+  <div class="wide">
+    <aside class="emergency" aria-label="জরুরি অবস্থা">
+      <span class="ic ic-alert" aria-hidden="true"></span>
+      <p><strong>LiquidLyf জরুরি সেবা নয়।</strong> এখনই রক্ত লাগলে হাসপাতাল বা লাইসেন্স করা ব্লাড
+        ব্যাংকে যোগাযোগ করুন, অথবা <a href="tel:999">৯৯৯</a>-এ কল করুন।</p>
+    </aside>
+  </div>
+</section>
+
+<section class="trust" aria-label="কেন LiquidLyf">
+  <ul class="wide trust-list">
+    <li><span class="ic ic-gift" aria-hidden="true"></span>ফ্রি</li>
+    <li><span class="ic ic-no-ads" aria-hidden="true"></span>কোনো বিজ্ঞাপন নেই</li>
+    <li><span class="ic ic-lock" aria-hidden="true"></span>আপনার নম্বর গোপন থাকে</li>
+    <li><span class="ic ic-language" aria-hidden="true"></span>বাংলা ও ইংরেজি</li>
+    <li><span class="ic ic-code" aria-hidden="true"></span>ওপেন সোর্স</li>
+  </ul>
+</section>
+
+<section id="how" class="section">
+  <div class="wide">
+    <h2>কীভাবে কাজ করে</h2>
+    <p class="intro">যাঁদের রক্ত লাগবে আর যাঁরা রক্ত দেন, দুই পক্ষের জন্যই এক অ্যাপ।</p>
+    <div class="two">
+      <article class="card">
+        <h3><span class="ic ic-drop" aria-hidden="true"></span>রক্ত লাগবে?</h3>
+        <ol class="steps">
+          <li><span class="badge"><span class="ic ic-post" aria-hidden="true"></span></span>
+            <p><strong>পোস্ট দিন।</strong> অ্যাপে <strong>“রক্তের অনুরোধ করুন”</strong> চাপুন, তারপর
+              রক্তের গ্রুপ, হাসপাতাল আর কবে লাগবে লিখে দিন।</p></li>
+          <li><span class="badge"><span class="ic ic-bell" aria-hidden="true"></span></span>
+            <p><strong>কাছের রক্তদাতারা নোটিফিকেশন পান।</strong> হাসপাতালের কাছে যাঁদের গ্রুপ মেলে আর
+              যাঁরা এখন রক্ত দিতে পারবেন, শুধু তাঁরাই পান। কেউ সাড়া না দিলে অ্যাপ ধাপে ধাপে আরও
+              দূরে খোঁজে।</p></li>
+          <li><span class="badge"><span class="ic ic-phone" aria-hidden="true"></span></span>
+            <p><strong>রক্তদাতা রাজি হলে সরাসরি কথা বলুন।</strong> যিনি রক্ত দিতে রাজি হন, শুধু তাঁর
+              নম্বর আপনি দেখতে পাবেন। দেখা করুন হাসপাতালেই।</p></li>
+        </ol>
+        <p class="more">চাইলে <strong>“রক্তদাতা খুঁজুন”</strong>-এ রক্তের গ্রুপ আর এলাকা দিয়ে
+          রক্তদাতা খুঁজে কাউকে রক্ত দিতে অনুরোধও করতে পারেন।</p>
+      </article>
+      <article class="card">
+        <h3><span class="ic ic-heart" aria-hidden="true"></span>রক্ত দিতে চান?</h3>
+        <ol class="steps">
+          <li><span class="badge"><span class="ic ic-user-add" aria-hidden="true"></span></span>
+            <p><strong>রক্তদাতা হিসেবে নাম দিন।</strong> আপনার রক্তের গ্রুপ আর এলাকা দিন। তালিকায়
+              আপনার ফোন নম্বর কখনো দেখানো হয় না।</p></li>
+          <li><span class="badge"><span class="ic ic-bell" aria-hidden="true"></span></span>
+            <p><strong>নোটিফিকেশন পান,</strong> যখন আপনার কাছে কারও আপনার গ্রুপের রক্ত লাগে।</p></li>
+          <li><span class="badge"><span class="ic ic-calendar" aria-hidden="true"></span></span>
+            <p><strong>রাজি হন, তারপর হাসপাতালে গিয়ে রক্ত দিন।</strong> রক্তদানের হিসাব আপনার
+              প্রোফাইলে থাকে, আর আবার কবে দিতে পারবেন, অ্যাপ মনে করিয়ে দেয়।</p></li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="safety" class="section alt">
+  <div class="wide">
+    <h2>নিরাপত্তার কথা ভেবে বানানো</h2>
+    <p class="intro">আপনার ফোন নম্বর আর রক্তের গ্রুপ আপনি আমাদের ভরসা করে দেন। LiquidLyf আপনাকে যেভাবে
+      নিরাপদ রাখে:</p>
+    <ul class="tiles">
+      <li class="tile"><span class="badge"><span class="ic ic-lock" aria-hidden="true"></span></span>
+        <h3>আপনার নম্বর কোথাও পাবলিক থাকে না</h3>
+        <p>রক্তদাতা রাজি হলে তবেই যিনি পোস্ট দিয়েছেন তিনি তাঁর নম্বর দেখেন। রক্তদাতাও পোস্টের
+          যোগাযোগ নম্বর দেখেন শুধু যতক্ষণ তাঁর প্রস্তাব চালু থাকে।</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-no-money" aria-hidden="true"></span></span>
+        <h3>রক্তের জন্য কখনো টাকা দেবেন না</h3>
+        <p>রক্তদান ফ্রি। পোস্টে টাকার কথা থাকলে অ্যাপ সাবধান করে দেয়। কেউ বিকাশ, নগদ বা “যাতায়াত
+          খরচ” চাইলে সেটা প্রতারণা: টাকা দেবেন না, রিপোর্ট করুন।</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-building" aria-hidden="true"></span></span>
+        <h3>রক্ত দিন শুধু হাসপাতালে</h3>
+        <p>লাইসেন্স করা হাসপাতাল বা ব্লাড ট্রান্সফিউশন সেন্টারে রক্ত দিন, যেখানে রক্ত পরীক্ষা করা হয়।
+          অচেনা কারও সাথে একা অন্য কোথাও দেখা করতে যাবেন না।</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-flag" aria-hidden="true"></span></span>
+        <h3>রিপোর্ট আর ব্লক</h3>
+        <p>ভুয়া পোস্ট বা টাকা চাওয়া দেখলে রিপোর্ট করুন। যার কাছ থেকে আর কিছু চান না, তাকে ব্লক করুন।
+          প্রতিটা রিপোর্ট স্বেচ্ছাসেবক মডারেটররা দেখেন।</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-calendar" aria-hidden="true"></span></span>
+        <h3>দুই রক্তদানের মাঝে বিশ্রাম</h3>
+        <p>প্রতিবার রক্ত দেওয়ার পর অ্যাপ বিরতির দিন গোনে। আবার রক্ত দিতে পারার আগে আপনাকে কোনো
+          অ্যালার্ট পাঠায় না।</p></li>
+      <li class="tile"><span class="badge"><span class="ic ic-shield" aria-hidden="true"></span></span>
+        <h3>লুকোছাপা নেই</h3>
+        <p>কোনো বিজ্ঞাপন বা ট্র্যাকার নেই, আর অ্যাপের কোড সবার জন্য খোলা। কোন তথ্য কেন নিই, সব সহজ
+          ভাষায় লেখা আছে <a href="/bn/privacy">গোপনীয়তা নীতিতে</a>।</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="wide">
+    <h2>প্রশ্ন ও উত্তর</h2>
+    <div class="faq">
+      <details>
+        <summary>LiquidLyf কি ফ্রি?</summary>
+        <p>হ্যাঁ, সবার জন্য ফ্রি। কোনো বিজ্ঞাপন নেই, কিছু কিনতেও হয় না। স্বেচ্ছাসেবকেরা এটা
+          বানিয়েছেন, আর এটা চলে Firebase ও Cloudflare-এর ফ্রি প্ল্যানে।</p>
+      </details>
+      <details>
+        <summary>আমার ফোন নম্বর কে দেখতে পায়?</summary>
+        <p>পাবলিকলি কেউ না: আপনার নম্বর কোনো তালিকায় থাকে না। আপনি পোস্ট দিলে শুধু যাঁরা রক্ত দিতে
+          রাজি হয়েছেন, তাঁরাই যোগাযোগের নম্বর দেখেন, তাও যতক্ষণ তাঁদের প্রস্তাব চালু থাকে। আপনি রাজি
+          হলে, যিনি পোস্ট দিয়েছেন তিনি আপনার নম্বর দেখেন। <strong>“রক্তদাতা খুঁজুন”</strong>-এ
+          কারও নম্বর দেখা যায় না। বিস্তারিত আছে <a href="/bn/privacy">গোপনীয়তা নীতিতে</a>।</p>
+      </details>
+      <details>
+        <summary>Play Store-এ নেই কেন? ফাইলটা কি নিরাপদ?</summary>
+        <p>আপাতত আমরা নিজেরাই অ্যাপটা দিচ্ছি, এই ওয়েবসাইটে আর GitHub-এ। পরে Play Store-এও আসতে
+          পারে। সব আসল কপি একই ডিজিটাল সিগনেচার দিয়ে সাইন করা, আর অ্যাপের কোড যে কেউ দেখে নিতে
+          পারেন। Play Store-এর বাইরে থেকে নামানো বলে ফোন সতর্কবার্তা দেখাতে পারে, এটা স্বাভাবিক।
+          <strong>শুধু এই ওয়েবসাইট বা GitHub Releases থেকে নামান:</strong> অন্য কোথাও পাওয়া কপি ভুয়া
+          হতে পারে।</p>
+      </details>
+            <details>
+        <summary>কারা রক্ত দিতে পারবেন, কত দিন পরপর?</summary>
+        <p>অ্যাপ এই নিয়ম মানে: বয়স ১৮ থেকে ৬০ বছর, ওজন অন্তত ৪৫ কেজি, আর আগের রক্তদানের পর অন্তত
+          ১২০ দিন (প্রায় ৪ মাস)। দিনের হিসাব অ্যাপই রাখে। রক্ত দেওয়ার দিন ডাক্তার বা ব্লাড ব্যাংক
+          আপনাকে দেখে শেষ সিদ্ধান্ত নেবেন।</p>
+      </details>
+      <details>
+        <summary>অ্যাকাউন্ট কীভাবে মুছব?</summary>
+        <p>অ্যাপে যান <strong>সেটিংস → আপনার অ্যাকাউন্ট মুছে ফেলুন</strong>। অ্যাপ না থাকলে আপনার
+          অ্যাকাউন্টের ইমেইল থেকে liquidlyf@gmail.com-এ মেইল করুন, সাবজেক্টে লিখুন “Delete my
+          account”। <a href="/bn/delete-account">বিস্তারিত দেখুন</a>।</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wide two">
+    <div class="card">
+      <h2>রক্তদাতা ক্লাব আর সংগঠনের জন্য</h2>
+      <p>ব্লাড ডোনার ক্লাব, হাসপাতালের ব্লাড ব্যাংক বা কোনো এনজিও চালান? আমরা একসাথে কাজ করতে চাই।
+        <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a>-এ মেইল করুন, সাবজেক্টে লিখুন
+        “Partner”।</p>
+    </div>
+    <div class="card">
+      <h2>LiquidLyf বানাতে হাত লাগান</h2>
+      <p>স্বেচ্ছাসেবকেরা মিলে LiquidLyf বানাচ্ছেন। ডেভেলপার, অনুবাদক, ডিজাইনার, টেস্টার, সবাইকে
+        স্বাগতম। <a href="https://github.com/liquidlyf/LiquidLyf/blob/HEAD/CONTRIBUTING.md">কীভাবে
+        যুক্ত হবেন</a> দেখুন (ইংরেজিতে)।</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wide">
+    {%- if site.released %}
+    <h2>LiquidLyf নামিয়ে নিন</h2>
+    <p>ফ্রি, অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনের জন্য।</p>
+    <div class="cta"><a class="btn" href="/bn/download"><span class="ic ic-download" aria-hidden="true"></span>অ্যান্ড্রয়েডে ডাউনলোড করুন</a></div>
+    {%- else %}
+    <h2>শিগগিরই আসছে</h2>
+    <p>LiquidLyf এখন পরীক্ষা করা হচ্ছে।{% if site.facebook %} কবে আসছে জানতে আমাদের ফলো করুন।{% endif %}</p>
+    <div class="cta">
+      {%- if site.facebook %}
+      <a class="btn" href="https://www.facebook.com/liquidlyf">Facebook-এ ফলো করুন</a>
+      {%- else %}
+      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ প্রজেক্টটি ফলো করুন</a>
+      {%- endif %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
