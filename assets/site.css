@@ -88,8 +88,10 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--link); outline
 img { max-width: 100%; height: auto; }
 
 /* Left-aligned, never justified (WCAG 1.4.8; browsers can't hyphenate Bangla). "pretty" balances the
-   line breaks so a paragraph doesn't end with one word alone; older browsers simply ignore it. */
-p, li, dd, td, th, blockquote, summary, h1, h2, h3 { text-wrap: pretty; }
+   line breaks so a paragraph doesn't end with one word alone; headings use "balance", which evens out
+   their lines. Older browsers simply ignore both. */
+p, li, dd, td, th, blockquote, summary { text-wrap: pretty; }
+h1, h2, h3 { text-wrap: balance; }
 
 h1, h2, h3 { line-height: 1.3; }
 html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
@@ -422,6 +424,7 @@ code { font-size: 0.95em; }
 .site-footer a { color: inherit; overflow-wrap: anywhere; }
 .site-footer a:hover { color: var(--link); }
 .fine { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
+.copyright { margin-top: 0.5rem; margin-bottom: 0; font-size: 0.85rem; }
 @media (max-width: 52rem) {
   .cols { grid-template-columns: 1fr 1fr; }
   .about { grid-column: 1 / -1; }
