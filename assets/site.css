@@ -306,6 +306,8 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 .card h2 { font-size: 1.3rem; text-align: left; margin: 0 0 0.5rem; }
 .card p { margin: 0; }
 .card p + p { margin-top: 0.75rem; }
+.card .links { display: grid; gap: 0.35rem; margin: 1rem 0 0; padding: 0.9rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.card .note { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
 
 .steps { display: grid; gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
 .steps li { display: flex; gap: 14px; align-items: flex-start; }
