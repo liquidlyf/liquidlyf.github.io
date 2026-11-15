@@ -4,6 +4,7 @@ lang: bn
 permalink: /bn/
 alternate: /
 home: true
+screenshot: /assets/screens/home-bn.png
 share_title: "LiquidLyf: রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন"
 description: LiquidLyf একটা ফ্রি অ্যান্ড্রয়েড অ্যাপ। হাসপাতালের কাছের রক্তদাতাদের কাছে নোটিফিকেশন পাঠায়। কেউ রক্ত দিতে রাজি হওয়ার আগে কারও ফোন নম্বর দেখা যায় না।
 ---
@@ -28,22 +29,20 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
         {%- endif %}
       </div>
       <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% endif %}</p>
+      <aside class="emergency" aria-label="জরুরি অবস্থা">
+        <span class="ic ic-alert" aria-hidden="true"></span>
+        <p><strong>LiquidLyf জরুরি সেবা নয়।</strong> এখনই রক্ত লাগলে হাসপাতাল বা লাইসেন্স করা ব্লাড
+          ব্যাংকে যোগাযোগ করুন, অথবা <a href="tel:999">৯৯৯</a>-এ কল করুন।</p>
+      </aside>
     </div>
     <div class="hero-art">
       {%- if page.screenshot %}
-      <img class="phone" src="{{ page.screenshot }}" width="720" height="1600"
-        alt="LiquidLyf-এর হোম স্ক্রিন, কাছের একটি রক্তের অনুরোধসহ (উদাহরণ)">
+      <img class="phone" src="{{ page.screenshot }}" width="540" height="1200"
+        alt="LiquidLyf-এর হোম স্ক্রিন: কাছেই ঢাকা মেডিকেল কলেজ হাসপাতালে ২ ব্যাগ B+ রক্তের জরুরি অনুরোধ (উদাহরণ)">
       {%- else %}
       <div class="hero-mark"><img src="/assets/logo-mark.svg" alt="" width="512" height="512"></div>
       {%- endif %}
     </div>
-  </div>
-  <div class="wide">
-    <aside class="emergency" aria-label="জরুরি অবস্থা">
-      <span class="ic ic-alert" aria-hidden="true"></span>
-      <p><strong>LiquidLyf জরুরি সেবা নয়।</strong> এখনই রক্ত লাগলে হাসপাতাল বা লাইসেন্স করা ব্লাড
-        ব্যাংকে যোগাযোগ করুন, অথবা <a href="tel:999">৯৯৯</a>-এ কল করুন।</p>
-    </aside>
   </div>
 </section>
 

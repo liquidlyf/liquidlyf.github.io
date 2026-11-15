@@ -158,8 +158,8 @@ serious harm.
 - **See and correct** your profile at any time in the app.
 - **Stop being listed as a donor:** Settings → Privacy. Your donor card is removed at once, and you
   stop getting request alerts.
-- **Pause alerts:** turn off "Ready to donate now" in your profile, or turn off notifications in
-  Android settings.
+- **Pause alerts:** turn off "Ready to donate" on the Home screen or in Settings, or turn off
+  notifications in Android settings.
 - **Withdraw an offer** at any time before you donate. You then no longer see the request's contact
   details. The requester can still see the number you
   shared with that offer until it is deleted, 90 days after the request closes (section 6), and may

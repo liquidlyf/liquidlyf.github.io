@@ -4,6 +4,7 @@ lang: en
 permalink: /
 alternate: /bn/
 home: true
+screenshot: /assets/screens/home-en.png
 share_title: "LiquidLyf: Need blood? Find donors near you"
 description: LiquidLyf is a free Android app that alerts blood donors near the hospital in Bangladesh. Phone numbers stay private until a donor offers to help.
 ---
@@ -28,22 +29,20 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
         {%- endif %}
       </div>
       <p class="cta-note">{% if site.released %}For Android 7.0 or newer · Free, no ads{% else %}The app is being tested and isn’t available to download yet.{% endif %}</p>
+      <aside class="emergency" aria-label="Emergencies">
+        <span class="ic ic-alert" aria-hidden="true"></span>
+        <p><strong>LiquidLyf is not an emergency service.</strong> If someone needs blood right now,
+          contact the hospital or a licensed blood bank, or call <a href="tel:999">999</a>.</p>
+      </aside>
     </div>
     <div class="hero-art">
       {%- if page.screenshot %}
-      <img class="phone" src="{{ page.screenshot }}" width="720" height="1600"
-        alt="The LiquidLyf home screen, showing a blood request near the user (example data)">
+      <img class="phone" src="{{ page.screenshot }}" width="540" height="1200"
+        alt="The LiquidLyf home screen: an urgent request near the user for 2 units of B+ blood at Dhaka Medical College Hospital (example data)">
       {%- else %}
       <div class="hero-mark"><img src="/assets/logo-mark.svg" alt="" width="512" height="512"></div>
       {%- endif %}
     </div>
-  </div>
-  <div class="wide">
-    <aside class="emergency" aria-label="Emergencies">
-      <span class="ic ic-alert" aria-hidden="true"></span>
-      <p><strong>LiquidLyf is not an emergency service.</strong> If someone needs blood right now,
-        contact the hospital or a licensed blood bank, or call <a href="tel:999">999</a>.</p>
-    </aside>
   </div>
 </section>
 
