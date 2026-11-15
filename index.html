@@ -36,7 +36,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
       </aside>
     </div>
     <div class="hero-art">
-      {%- if page.screenshot %}
+      {%- if site.released and page.screenshot %}
       <img class="phone" src="{{ page.screenshot }}" width="540" height="1200"
         alt="The LiquidLyf home screen: an urgent request near the user for 2 units of B+ blood at Dhaka Medical College Hospital (example data)">
       {%- else %}
