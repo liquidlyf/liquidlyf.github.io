@@ -87,12 +87,8 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--link); outline
 
 img { max-width: 100%; height: auto; }
 
-/* Left-aligned, never justified (WCAG 1.4.8; browsers can't hyphenate Bangla). "pretty" balances the
-   line breaks so a paragraph doesn't end with one word alone; headings use "balance", which evens out
-   their lines. Older browsers simply ignore both. */
-p, li, dd, td, th, blockquote, summary { text-wrap: pretty; }
-h1, h2, h3 { text-wrap: balance; }
-
+/* Text is left-aligned, never justified (WCAG 1.4.8; browsers can't hyphenate Bangla). No text-wrap
+   rules: the maintainer's choice, 16 Nov 2026. */
 h1, h2, h3 { line-height: 1.3; }
 html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
 [id] { scroll-margin-top: 1rem; }
