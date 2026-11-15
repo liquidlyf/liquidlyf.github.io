@@ -1,0 +1,139 @@
+---
+title: Terms and Community Guidelines
+lang: en
+permalink: /terms
+alternate: /bn/terms
+---
+
+# LiquidLyf Terms and Community Guidelines
+
+**Effective date:** 15 November 2026 · [বাংলা](/bn/terms)
+
+These terms are the rules for using the LiquidLyf app. By creating an account, you agree to them and to
+our [Privacy Policy](/privacy). They are written to keep donors, patients and their families safe.
+
+## 1. What LiquidLyf is, and what it isn't
+
+LiquidLyf is a free community tool that helps people who need blood find voluntary donors nearby.
+
+- LiquidLyf **only connects people.** It doesn't collect, test, store or supply blood.
+- It is **not a blood bank, a hospital or a medical service**, and it isn't part of the government,
+  DGHS, any hospital or the Red Crescent.
+- It **doesn't check** donors' health or identity, and it can't promise that a donor will come.
+- It is **not an emergency service.** In an emergency, contact the hospital or a licensed blood bank,
+  or call 999.
+
+## 2. Who can use LiquidLyf
+
+- You must be **18 or older**.
+- Use your real name, your own phone number and a correct blood group.
+- One account per person. Keep your password safe, and don't let others use your account.
+
+## 3. Blood is never for sale
+
+**Never pay, and never accept money or gifts, for blood.** This includes "transport costs",
+"test fees", bKash, Nagad or any other payment asked for by a donor, a requester or anyone claiming to
+help. Asking for money is the most common blood scam in Bangladesh. If anyone asks, don't pay, and
+report them in the app.
+
+Donate **only at a licensed hospital or blood transfusion centre**, where the blood is screened. Never
+donate somewhere else, and never go alone to meet a stranger anywhere but the hospital.
+
+## 4. Community rules
+
+Do:
+- Post only genuine requests, for a real patient, with correct details.
+- Update or close your request when you have enough donors.
+- Offer only if you are able and eligible to donate, and withdraw quickly if your plans change.
+- Treat everyone with respect.
+
+Don't:
+- Post fake, exaggerated or duplicate requests.
+- Ask for, offer or accept **any payment** for blood, or act as a broker for paid donors.
+- Collect other people's phone numbers, or use them for anything other than the donation they were
+  shared for. No marketing, no lists, no sharing them with others.
+- Harass, threaten or pressure anyone, or contact a donor again after they say no.
+- Post sexual, hateful or violent content.
+- Pretend to be someone else, or to represent a hospital, a blood bank or an organization.
+- Post another person's private details (such as a patient's name or ward) without their permission.
+- Spam, or use bots, scripts or modified apps to use LiquidLyf.
+- Try to break the app's security, or read data you aren't allowed to see.
+
+## 5. Reporting and blocking
+
+- Use **Report** on any request or person that breaks these rules. Choose a reason, such as "asking
+  for money" or "fake request".
+- Use **Block** to stop seeing someone's requests, and to stop them asking you to donate or offering
+  on your requests.
+- A request reported by several different people is hidden automatically until a moderator reviews it.
+- Our volunteer moderators aim to review reports **within 24 hours**.
+
+Report a security problem privately, as our
+[security policy](https://github.com/liquidlyf/LiquidLyf/security/policy) explains.
+
+## 6. What happens if someone breaks the rules
+
+Depending on what happened, moderators may:
+- remove a request or other content;
+- warn the person;
+- limit their account, for example how many requests they can post;
+- suspend or permanently ban the account.
+
+We may ban accounts without warning for scams, payment requests, threats or harassment. If a crime is
+involved, we may report it to the police when the law requires it or someone is in danger. If you
+think a decision was wrong, email us and a different moderator will look at it.
+
+## 7. Your content
+
+You own what you post. By posting a request, an offer or a report, you allow LiquidLyf to store it and
+show it to the people described in our Privacy Policy, only to run the app. We may remove content
+that breaks these terms.
+
+## 8. Medical disclaimer
+
+LiquidLyf is a community tool that helps people find voluntary blood donors. It is not a medical
+device and does not diagnose, treat, cure or prevent any medical condition. LiquidLyf does not collect,
+test, store or supply blood, and does not verify donors' health or identity. Blood must be donated only
+at a licensed hospital or blood transfusion centre, where it will be screened.
+
+The donation rest period and the eligibility hints in the app are general information. **The blood
+centre or doctor always decides whether you can donate.** If you feel unwell, don't donate. Always
+consult a doctor or other qualified healthcare professional for medical advice.
+
+## 9. No guarantees, and limits on our liability
+
+LiquidLyf is free and run by volunteers. We do our best, but:
+- the app is provided "as is", without any warranty;
+- the app can be unavailable at times. It runs on free plans with daily limits, and live updates may
+  pause until the limit resets;
+- we don't guarantee that a donor will respond or come, or that information posted by users is
+  correct;
+- we aren't responsible for what users do, inside or outside the app.
+
+As far as the law allows, LiquidLyf, its maintainers and its contributors are not liable for any loss
+or harm that comes from using the app or from meeting other users. Nothing in these terms limits
+rights that the law doesn't allow us to limit.
+
+## 10. The source code and the name
+
+LiquidLyf's source code is free software under the
+[GNU Affero General Public License](https://github.com/liquidlyf/LiquidLyf/blob/HEAD/LICENSE). These terms
+cover your use of the **official** LiquidLyf app and its services. They don't limit your rights under
+that licence. The name "LiquidLyf" and the logo aren't covered by the licence; see our
+[trademark policy](https://github.com/liquidlyf/LiquidLyf/blob/HEAD/TRADEMARKS.md). Only download
+LiquidLyf from [liquidlyf.github.io/download](/download).
+
+## 11. Law
+
+These terms are governed by the laws of Bangladesh.
+
+## 12. Changes and ending your account
+
+We may update these terms. We change the effective date at the top, and for important changes the app
+asks you to accept the new version. If you don't agree, you can stop using LiquidLyf and
+[delete your account](/delete-account) at any time.
+
+## 13. Contact
+
+Email **liquidlyf@gmail.com**. Write "Report" in the subject for safety issues, and "Appeal" if you
+want a moderation decision reviewed.

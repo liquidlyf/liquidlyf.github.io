@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{%- assign bn = false -%}
+{%- if page.lang == "bn" -%}{%- assign bn = true -%}{%- endif -%}
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>{% if page.title == site.title %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- if page.alternate %}
+  <link rel="alternate" hreflang="{% if bn %}en{% else %}bn{% endif %}" href="{{ site.url }}{{ page.alternate }}">
+  {%- endif %}
+  <link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">{% if bn %}মূল লেখায় যান{% else %}Skip to content{% endif %}</a>
+  <header class="wrap site-header">
+    <a class="brand" href="{% if bn %}/bn/{% else %}/{% endif %}">
+      <picture>
+        <source srcset="/assets/logo-full-dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="/assets/logo-full.svg" alt="LiquidLyf" width="120" height="86">
+      </picture>
+    </a>
+  </header>
+  <main id="main" class="wrap">
+    {%- if bn and site.bn_reviewed != true %}
+    <p class="notice">এই বাংলা অনুবাদটি এখনো যাচাই করা হচ্ছে। দুই সংস্করণে কোনো পার্থক্য থাকলে
+      {% if page.alternate %}<a href="{{ page.alternate }}">ইংরেজি সংস্করণটি</a>{% else %}ইংরেজি সংস্করণটি{% endif %} প্রযোজ্য।</p>
+    {%- endif %}
+    {{ content }}
+  </main>
+  <footer class="wrap site-footer">
+    {%- if bn %}
+    <p><a href="/bn/privacy">গোপনীয়তা নীতি</a> · <a href="/bn/terms">শর্তাবলি ও কমিউনিটি নির্দেশিকা</a> ·
+      <a href="/bn/delete-account">অ্যাকাউন্ট মুছে ফেলুন</a> ·
+      <a href="https://github.com/liquidlyf/LiquidLyf">সোর্স কোড</a> ·
+      যোগাযোগ: <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></p>
+    {%- else %}
+    <p><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms and Community Guidelines</a> ·
+      <a href="/delete-account">Delete your account</a> ·
+      <a href="https://github.com/liquidlyf/LiquidLyf">Source code</a> ·
+      Contact: <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></p>
+    {%- endif %}
+  </footer>
+</body>
+</html>
