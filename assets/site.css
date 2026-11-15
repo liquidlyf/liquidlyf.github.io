@@ -174,14 +174,13 @@ html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
 
 @media (max-width: 52rem) {
   .lang { margin-left: auto; }
-  /* The menu moves to its own row and scrolls sideways if it doesn't fit. */
+  /* The menu moves to its own row; on a narrow phone it wraps to a second line, so no item hides. */
   .site-nav {
     order: 3;
     flex-basis: 100%;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    overflow-x: auto;
-    scrollbar-width: none;
-    margin: 0 -10px;
+    margin: 0 -8px;
   }
   .site-nav a { padding: 0 8px; font-size: 0.95rem; }
 }

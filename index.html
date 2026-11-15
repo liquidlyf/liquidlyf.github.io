@@ -25,10 +25,10 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
         {%- if site.facebook %}
         <a class="btn-link" href="https://www.facebook.com/liquidlyf">Follow us on Facebook to know when it launches</a>
         {%- else %}
-        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">Follow the project on GitHub</a>
+        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">Get release alerts on GitHub</a>
         {%- endif %}
       </div>
-      <p class="cta-note">{% if site.released %}For Android 7.0 or newer · Free, no ads{% else %}The app is being tested and isn’t available to download yet.{% endif %}</p>
+      <p class="cta-note">{% if site.released %}For Android 7.0 or newer · Free, no ads{% else %}The app is being tested and isn’t available to download yet.{% unless site.facebook %} For an alert when it’s out, choose <strong>Watch → Custom → Releases</strong> on GitHub (a free GitHub account is needed).{% endunless %}{% endif %}</p>
       <aside class="emergency" aria-label="Emergencies">
         <span class="ic ic-alert" aria-hidden="true"></span>
         <p><strong>LiquidLyf is not an emergency service.</strong> If someone needs blood right now,
@@ -193,12 +193,12 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
     <div class="cta"><a class="btn" href="/download"><span class="ic ic-download" aria-hidden="true"></span>Download for Android</a></div>
     {%- else %}
     <h2>Coming soon</h2>
-    <p>LiquidLyf is being tested now.{% if site.facebook %} Follow us to hear when it launches.{% endif %}</p>
+    <p>LiquidLyf is being tested now.{% if site.facebook %} Follow us to hear when it launches.{% else %} For an alert when it’s released, choose <strong>Watch → Custom → Releases</strong> on GitHub.{% endif %}</p>
     <div class="cta">
       {%- if site.facebook %}
       <a class="btn" href="https://www.facebook.com/liquidlyf">Follow us on Facebook</a>
       {%- else %}
-      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">Follow the project on GitHub</a>
+      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">Get release alerts on GitHub</a>
       {%- endif %}
     </div>
     {%- endif %}

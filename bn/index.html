@@ -25,10 +25,10 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
         {%- if site.facebook %}
         <a class="btn-link" href="https://www.facebook.com/liquidlyf">কবে আসছে জানতে Facebook-এ ফলো করুন</a>
         {%- else %}
-        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ প্রজেক্টটি ফলো করুন</a>
+        <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ নতুন রিলিজের খবর পান</a>
         {%- endif %}
       </div>
-      <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% endif %}</p>
+      <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% unless site.facebook %} রিলিজ হলেই খবর পেতে GitHub-এ <strong>Watch → Custom → Releases</strong> বেছে নিন (একটা ফ্রি GitHub অ্যাকাউন্ট লাগবে)।{% endunless %}{% endif %}</p>
       <aside class="emergency" aria-label="জরুরি অবস্থা">
         <span class="ic ic-alert" aria-hidden="true"></span>
         <p><strong>LiquidLyf জরুরি সেবা নয়।</strong> এখনই রক্ত লাগলে হাসপাতাল বা লাইসেন্স করা ব্লাড
@@ -194,12 +194,12 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
     <div class="cta"><a class="btn" href="/bn/download"><span class="ic ic-download" aria-hidden="true"></span>অ্যান্ড্রয়েডে ডাউনলোড করুন</a></div>
     {%- else %}
     <h2>শিগগিরই আসছে</h2>
-    <p>LiquidLyf এখন পরীক্ষা করা হচ্ছে।{% if site.facebook %} কবে আসছে জানতে আমাদের ফলো করুন।{% endif %}</p>
+    <p>LiquidLyf এখন পরীক্ষা করা হচ্ছে।{% if site.facebook %} কবে আসছে জানতে আমাদের ফলো করুন।{% else %} রিলিজ হলেই খবর পেতে GitHub-এ <strong>Watch → Custom → Releases</strong> বেছে নিন।{% endif %}</p>
     <div class="cta">
       {%- if site.facebook %}
       <a class="btn" href="https://www.facebook.com/liquidlyf">Facebook-এ ফলো করুন</a>
       {%- else %}
-      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ প্রজেক্টটি ফলো করুন</a>
+      <a class="btn" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ নতুন রিলিজের খবর পান</a>
       {%- endif %}
     </div>
     {%- endif %}
