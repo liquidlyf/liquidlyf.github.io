@@ -3,7 +3,7 @@
 
 title: LiquidLyf
 description: A free, privacy-first app that connects blood donors with people who need blood in Bangladesh.
-description_bn: রক্তদাতা আর যাঁদের রক্ত লাগবে, তাঁদের যোগাযোগ করিয়ে দেয় ফ্রি অ্যাপ LiquidLyf। আপনার ফোন নম্বর কোথাও পাবলিক থাকে না।
+description_bn: বাংলাদেশে রক্তদাতা আর যাঁদের রক্ত লাগবে, দুই পক্ষের মধ্যে যোগাযোগ করিয়ে দেয় ফ্রি অ্যাপ LiquidLyf। আপনার ফোন নম্বর কোথাও পাবলিক থাকে না।
 url: https://liquidlyf.github.io
 lang: en
 # The footer's copyright year is the build's year (site.time), in Bangladesh time.

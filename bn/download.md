@@ -2,7 +2,7 @@
 title: LiquidLyf ডাউনলোড
 lang: bn
 permalink: /bn/download
-description: LiquidLyf অ্যান্ড্রয়েড অ্যাপ এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না। ১.০ ভার্সন এলে খবর পান।
+description: LiquidLyf অ্যান্ড্রয়েড অ্যাপ এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না। ১.০ ভার্সন এলে কীভাবে খবর পাবেন, তা এখানে দেখুন।
 alternate: /download
 ---
 
