@@ -23,7 +23,7 @@ description: LiquidLyf বাংলাদেশের একটা ফ্রি 
         <a class="btn" href="/bn/download">শিগগিরই আসছে</a>
         {%- endif %}
         {%- if site.facebook %}
-        <a class="btn-link" href="https://www.facebook.com/liquidlyf">কবে আসছে জানতে Facebook-এ ফলো করুন</a>
+        <a class="btn-link" href="https://www.facebook.com/liquidlyf">{% if site.released %}Facebook-এ ফলো করুন{% else %}কবে আসছে জানতে Facebook-এ ফলো করুন{% endif %}</a>
         {%- else %}
         <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ নতুন রিলিজের খবর পান</a>
         {%- endif %}

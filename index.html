@@ -23,7 +23,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
         <a class="btn" href="/download">Coming soon</a>
         {%- endif %}
         {%- if site.facebook %}
-        <a class="btn-link" href="https://www.facebook.com/liquidlyf">Follow us on Facebook to know when it launches</a>
+        <a class="btn-link" href="https://www.facebook.com/liquidlyf">{% if site.released %}Follow us on Facebook{% else %}Follow us on Facebook to know when it launches{% endif %}</a>
         {%- else %}
         <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">Get release alerts on GitHub</a>
         {%- endif %}

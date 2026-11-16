@@ -443,6 +443,17 @@ th { background: var(--surface); }
 
 hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 code { font-size: 0.95em; }
+/* A code block (the download page's app ID and key fingerprint) wraps on a phone instead of widening
+   the page. Copying it still gives one line per line. */
+pre {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
 
 /* ------------------------------------------------------------------ footer */
 .site-footer {
