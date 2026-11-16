@@ -2,6 +2,7 @@
 title: Delete your LiquidLyf account
 lang: en
 permalink: /delete-account
+description: How to delete your LiquidLyf account and its data, in the app or by email, and what is kept.
 alternate: /bn/delete-account
 ---
 
@@ -26,7 +27,7 @@ Your account is deleted at once.
 
 If you no longer have the app, or can't sign in:
 
-1. Email **liquidlyf@gmail.com** from the email address of your LiquidLyf account.
+1. Email **[liquidlyf@gmail.com](mailto:liquidlyf@gmail.com?subject=Delete%20my%20account)** from the email address of your LiquidLyf account.
 2. Write **"Delete my account"** in the subject.
 3. If you can't use that email address any more, tell us the email address and the phone number on the
    account. We will ask you a few questions to make sure the account is yours.
@@ -67,4 +68,4 @@ identifies you:
 
 You can delete your account even if it has been suspended.
 
-More details are in our [Privacy Policy](/privacy). Questions? Email **liquidlyf@gmail.com**.
+More details are in our [Privacy Policy](/privacy). Questions? Email **[liquidlyf@gmail.com](mailto:liquidlyf@gmail.com)**.

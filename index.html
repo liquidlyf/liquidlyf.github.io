@@ -29,11 +29,11 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
         {%- endif %}
       </div>
       <p class="cta-note">{% if site.released %}For Android 7.0 or newer · Free, no ads{% else %}The app is being tested and isn’t available to download yet.{% unless site.facebook %} For an alert when it’s out, choose <strong>Watch → Custom → Releases</strong> on GitHub (a free GitHub account is needed).{% endunless %}{% endif %}</p>
-      <aside class="emergency" aria-label="Emergencies">
+      <div class="emergency" role="note">
         <span class="ic ic-alert" aria-hidden="true"></span>
         <p><strong>LiquidLyf is not an emergency service.</strong> If someone needs blood right now,
           contact the hospital or a licensed blood bank, or call <a href="tel:999">999</a>.</p>
-      </aside>
+      </div>
     </div>
     <div class="hero-art">
       {%- if site.released and page.screenshot %}
@@ -47,7 +47,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
 </section>
 
 <section class="trust" aria-label="Why LiquidLyf">
-  <ul class="wide trust-list">
+  <ul class="wide trust-list" role="list">
     <li><span class="ic ic-gift" aria-hidden="true"></span>Free</li>
     <li><span class="ic ic-no-ads" aria-hidden="true"></span>No ads</li>
     <li><span class="ic ic-lock" aria-hidden="true"></span>Your number stays private</li>
@@ -63,7 +63,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
     <div class="two">
       <article class="card">
         <h3><span class="ic ic-drop" aria-hidden="true"></span>Need blood?</h3>
-        <ol class="steps">
+        <ol class="steps" role="list">
           <li><span class="badge"><span class="ic ic-post" aria-hidden="true"></span></span>
             <p><strong>Post a request.</strong> Tap <strong>Request blood</strong>, then add the
               blood group, the hospital and when it’s needed.</p></li>
@@ -80,7 +80,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
       </article>
       <article class="card">
         <h3><span class="ic ic-heart" aria-hidden="true"></span>Want to donate?</h3>
-        <ol class="steps">
+        <ol class="steps" role="list">
           <li><span class="badge"><span class="ic ic-user-add" aria-hidden="true"></span></span>
             <p><strong>List yourself as a donor.</strong> Add your blood group and your area. Your
               phone number is never shown in the list.</p></li>
@@ -100,7 +100,7 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
     <h2>Made to be safe</h2>
     <p class="intro">You trust us with your phone number and your blood group. Here’s how LiquidLyf
       protects you.</p>
-    <ul class="tiles">
+    <ul class="tiles" role="list">
       <li class="tile"><span class="badge"><span class="ic ic-lock" aria-hidden="true"></span></span>
         <h3>Your number is never public</h3>
         <p>A requester sees a donor’s number only after the donor offers. The donor sees the request’s
@@ -133,19 +133,19 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
   <div class="wide">
     <h2>Questions and answers</h2>
     <div class="faq">
-      <details>
+      <details id="faq-free">
         <summary>Is LiquidLyf free?</summary>
         <p>Yes. LiquidLyf is free for everyone, with no ads and nothing to buy. It’s built by
           volunteers and runs on the free plans of Firebase and Cloudflare.</p>
       </details>
-      <details>
+      <details id="faq-phone-number">
         <summary>Who can see my phone number?</summary>
         <p>Nobody, publicly: your number isn’t on any list. When you post a request, only the donors who
           offer to help see its contact number, and only while their offer is active. When you offer,
           the requester sees your number. <strong>Find donors</strong> never shows anyone’s number.
           Details are in the <a href="/privacy">Privacy Policy</a>.</p>
       </details>
-      <details>
+      <details id="faq-play-store">
         <summary>Why isn’t it on the Play Store? Is the file safe?</summary>
         <p>For now, we publish LiquidLyf ourselves, on this website and on GitHub. It may come to the
           Play Store later. Every genuine copy is signed with the same key, and anyone can read the
@@ -153,16 +153,16 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
           <strong>Only download it from this website or from GitHub Releases:</strong> a copy from
           anywhere else may be fake.</p>
       </details>
-            <details>
+            <details id="faq-who-can-donate">
         <summary>Who can donate, and how often?</summary>
         <p>The app follows these rules for whole blood: aged 18 to 60, weighing at least 45 kg, and at
           least 120 days (about 4 months) since your last donation. The app counts the days for you.
           On the day, the doctor or the blood bank checks you and makes the final decision.</p>
       </details>
-      <details>
+      <details id="faq-delete-account">
         <summary>How do I delete my account?</summary>
         <p>In the app, go to <strong>Settings → Delete your account</strong>. Without the app, email
-          liquidlyf@gmail.com from your account’s email address, with “Delete my account” in the
+          <a href="mailto:liquidlyf@gmail.com?subject=Delete%20my%20account">liquidlyf@gmail.com</a> from your account’s email address, with “Delete my account” in the
           subject. <a href="/delete-account">All the details</a>.</p>
       </details>
     </div>
@@ -174,15 +174,15 @@ description: LiquidLyf is a free Android app that alerts blood donors near the h
     <div class="card">
       <h2>For blood-donor clubs and organizations</h2>
       <p>Run a blood-donor club, a hospital blood bank or an NGO? We’d like to work with you. Email
-        <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a> with “Partner” in the subject.</p>
+        <a href="mailto:liquidlyf@gmail.com?subject=Partner">liquidlyf@gmail.com</a> with “Partner” in the subject.</p>
     </div>
     <div class="card">
       <h2>Help build LiquidLyf</h2>
       <p>LiquidLyf is built by volunteers. Developers, translators, designers and testers are welcome:
         see <a href="https://github.com/liquidlyf/LiquidLyf/blob/HEAD/CONTRIBUTING.md">how to
         contribute</a>.</p>
-            <ul class="links">
-        <li><a href="https://github.com/liquidlyf/LiquidLyf">⭐ Star LiquidLyf on GitHub</a></li>
+            <ul class="links" role="list">
+        <li><a href="https://github.com/liquidlyf/LiquidLyf"><span class="ic ic-star" aria-hidden="true"></span>Star LiquidLyf on GitHub</a></li>
         <li><a href="https://github.com/liquidlyf/LiquidLyf/releases.atom" type="application/atom+xml">Releases
           feed (RSS)</a>, for a feed reader, with no account needed</li>
       </ul>

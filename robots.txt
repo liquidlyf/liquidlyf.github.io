@@ -1,0 +1,5 @@
+# Every page of this site may be indexed.
+User-agent: *
+Disallow:
+
+Sitemap: https://liquidlyf.github.io/sitemap.xml

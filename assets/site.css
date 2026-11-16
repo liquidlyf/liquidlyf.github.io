@@ -20,6 +20,14 @@
   --warn-line: #a15c00;
   --warn-fg: #3d2600;
   --shadow: 0 1px 2px rgb(32 26 25 / 6%), 0 6px 20px rgb(32 26 25 / 7%);
+  --outline: #857371;          /* a border that shows a control: at least 3:1 */
+  --focus: var(--link);        /* the keyboard focus ring */
+  --heading-accent: #b71c22;   /* the h1 of a text page */
+  --phone-frame: #201a19;
+  --band-btn-bg: #ffffff;      /* the white button on the red band */
+  --band-btn-fg: #93151a;
+  --band-btn-hover: #ffe9e6;
+  --small: 0.95rem;            /* the smallest text: notes and the footer */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,8 +49,13 @@
     --warn-line: #f0a33a;
     --warn-fg: #fde8c8;
     --shadow: none;
+    --outline: #a08c89;
+    --heading-accent: #ffb4ab;
   }
 }
+
+/* Bangla letters look smaller than English ones at the same size, so small Bangla text stays 16 px. */
+html[lang="bn"] { --small: 1rem; }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -60,7 +73,9 @@ body {
 }
 
 html[lang="bn"] body {
-  font-family: "Noto Sans Bengali", "Nirmala UI", "Vrinda", system-ui, sans-serif;
+  /* Android: Noto Sans Bengali. Apple: Kohinoor Bangla, Bangla Sangam MN. Windows: Nirmala UI, Vrinda. */
+  font-family: "Noto Sans Bengali", "Kohinoor Bangla", "Bangla Sangam MN", "Nirmala UI", "Vrinda",
+    system-ui, sans-serif;
   line-height: 1.75;
 }
 
@@ -68,7 +83,8 @@ html[lang="bn"] body {
    numbers (the contents list, the home page steps) still can. */
 :where(html[lang="bn"]) ol { list-style-type: bengali; }
 
-.wrap { max-width: 46rem; margin: 0 auto; padding: 0 16px; }
+/* Text pages: about 70 characters a line in English (65–75 is easiest to read). */
+.wrap { max-width: 38rem; margin: 0 auto; padding: 0 16px; }
 .wide { max-width: 68rem; margin: 0 auto; padding: 0 16px; }
 
 .skip {
@@ -76,14 +92,21 @@ html[lang="bn"] body {
   left: -999px;
   top: 0;
   z-index: 10;
-  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1rem;
   background: var(--bg);
   color: var(--link);
 }
 .skip:focus { left: 16px; }
 
 a { color: var(--link); text-underline-offset: 0.15em; }
-a:focus-visible, summary:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; border-radius: 4px; }
+/* Bangla vowel signs below the letters (ু ূ ৃ) need the underline further down. */
+a:lang(bn) { text-underline-offset: 0.3em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+/* :where() has no weight, so buttons and pills keep their own round shape when focused. */
+:where(a:focus-visible, summary:focus-visible) { border-radius: 4px; }
 
 img { max-width: 100%; height: auto; }
 
@@ -122,6 +145,7 @@ html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
 .ic-post { --i: url("/assets/icons/post.svg"); }
 .ic-search { --i: url("/assets/icons/search.svg"); }
 .ic-shield { --i: url("/assets/icons/shield.svg"); }
+.ic-star { --i: url("/assets/icons/star.svg"); }
 .ic-user-add { --i: url("/assets/icons/user-add.svg"); }
 
 /* A round badge holding an icon. */
@@ -146,7 +170,7 @@ html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.brand { display: inline-flex; padding: 6px 0; }
+.brand { display: inline-flex; padding: 7px 0; }
 .brand img { display: block; width: auto; height: 30px; }
 .site-nav { display: flex; flex: 1; justify-content: center; gap: 2px; }
 .site-nav a {
@@ -164,9 +188,9 @@ html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
 .lang {
   display: inline-flex;
   align-items: center;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 16px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--outline);
   border-radius: 999px;
   color: var(--fg);
   font-weight: 700;
@@ -184,7 +208,7 @@ html[lang="bn"] :is(h1, h2, h3) { line-height: 1.45; }
     justify-content: flex-start;
     margin: 0 -8px;
   }
-  .site-nav a { padding: 0 8px; font-size: 0.95rem; }
+  .site-nav a { padding: 0 8px; font-size: var(--small); }
 }
 
 .notice, blockquote {
@@ -212,10 +236,12 @@ blockquote > :last-child { margin-bottom: 0; }
   font-weight: 700;
   text-decoration: none;
   box-shadow: var(--shadow);
+  /* Invisible, except in Windows high-contrast mode, where it draws the button's edge. */
+  border: 1px solid transparent;
 }
-.btn:hover { background: var(--accent-hover); }
-.btn-link { font-weight: 600; }
-.cta-note { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.btn:hover, .btn:active { background: var(--accent-hover); }
+.btn-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.cta-note { margin: 0; color: var(--muted); font-size: var(--small); }
 
 /* ------------------------------------------------------------------ home page */
 .hero-grid {
@@ -249,9 +275,9 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 .hero-mark img { width: 62%; transform: translateY(3.5%); }
 .phone {
   width: min(100%, 18rem);
-  border: 10px solid #201a19;
+  border: 10px solid var(--phone-frame);
   border-radius: 2.25rem;
-  background: #201a19;
+  background: var(--phone-frame);
   box-shadow: var(--shadow);
   outline: 1px solid var(--line);
 }
@@ -308,8 +334,10 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 .card h2 { font-size: 1.3rem; text-align: left; margin: 0 0 0.5rem; }
 .card p { margin: 0; }
 .card p + p { margin-top: 0.75rem; }
-.card .links { display: grid; gap: 0.35rem; margin: 1rem 0 0; padding: 0.9rem 0 0; border-top: 1px solid var(--line); list-style: none; }
-.card .note { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
+.card .links { display: grid; margin: 1rem 0 0; padding: 0.5rem 0 0; border-top: 1px solid var(--line); list-style: none; }
+.card .links a { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; }
+.card .links .ic { width: 1.25rem; height: 1.25rem; }
+.card .note { margin-top: 0.5rem; color: var(--muted); font-size: var(--small); }
 
 .steps { display: grid; gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
 .steps li { display: flex; gap: 14px; align-items: flex-start; }
@@ -328,7 +356,7 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 .tile h3 { margin: 0.8rem 0 0.35rem; font-size: 1.12rem; }
 .tile p { margin: 0; color: var(--muted); }
 
-.faq { max-width: 46rem; margin: 0 auto; }
+.faq { max-width: 38rem; margin: 0 auto; }
 .faq details { border-bottom: 1px solid var(--line); }
 .faq summary {
   display: flex;
@@ -343,16 +371,18 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
   list-style: none;
 }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; flex: none; color: var(--link); font-size: 1.6rem; line-height: 1; }
-.faq details[open] summary::after { content: "\2212"; }
+/* The + and − are for the eye only: "/ ''" keeps them out of the question that screen readers say. */
+.faq summary::after { content: "+"; content: "+" / ""; flex: none; color: var(--link); font-size: 1.6rem; line-height: 1; }
+.faq details[open] summary::after { content: "\2212"; content: "\2212" / ""; }
 .faq details > p { margin: 0 0 1.1rem; }
 
 .band { padding: 3rem 0; background: var(--accent); color: var(--on-accent); text-align: center; }
 .band h2 { margin: 0 0 0.5rem; font-size: clamp(1.5rem, 2vw + 1rem, 2rem); }
 .band p { margin: 0 auto; max-width: 36rem; }
 .band .cta { justify-content: center; }
-.band .btn { background: #ffffff; color: #93151a; }
-.band .btn:hover { background: #ffe9e6; }
+.band { --focus: var(--on-accent); }
+.band .btn { background: var(--band-btn-bg); color: var(--band-btn-fg); }
+.band .btn:hover, .band .btn:active { background: var(--band-btn-hover); }
 .band a:not(.btn) { color: inherit; }
 
 @media (max-width: 52rem) {
@@ -364,10 +394,9 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 
 /* ------------------------------------------------------------------ text pages */
 .doc { padding-bottom: 3rem; }
-.doc h1 { margin: 2rem 0 1rem; color: var(--accent); font-size: 1.9rem; }
+.doc h1 { margin: 2rem 0 1rem; color: var(--heading-accent); font-size: 1.9rem; }
 .doc h2 { margin: 2.25rem 0 0.75rem; font-size: 1.35rem; }
 .doc h3 { margin: 1.5rem 0 0.5rem; font-size: 1.1rem; }
-@media (prefers-color-scheme: dark) { .doc h1 { color: var(--link); } }
 
 .glance {
   margin: 1.5rem 0;
@@ -378,20 +407,22 @@ html[lang="bn"] .hero h1 { line-height: 1.3; letter-spacing: 0; }
 }
 .glance > :first-child { margin-top: 0; }
 .glance > :last-child { margin-bottom: 0; }
+.glance h2 { margin: 0 0 0.5rem; font-size: 1.05rem; }
 
 .toc { margin: 1.5rem 0; padding: 1rem 1.25rem; border: 1px solid var(--line); border-radius: 16px; }
-.toc h2 { margin: 0 0 0.5rem; font-size: 1rem; }
+.toc h2 { margin: 0 0 0.25rem; font-size: 1rem; }
 .toc ol { margin: 0; padding: 0; list-style: none; columns: 2 15rem; column-gap: 2rem; }
-.toc li { padding: 0.15rem 0; break-inside: avoid; }
+.toc li { break-inside: avoid; }
+.toc a { display: flex; align-items: center; min-height: 44px; }
+/* "Back to contents", after each numbered section (build_site.py). */
+.to-contents { margin: 1.25rem 0 0; font-size: var(--small); }
+.to-contents a { display: inline-flex; align-items: center; min-height: 44px; }
+.to-contents a::before { content: "\2191\00a0"; content: "\2191\00a0" / ""; }
 
-/* Wide tables scroll sideways on a phone instead of widening the page. */
-table {
-  display: block;
-  max-width: 100%;
-  overflow-x: auto;
-  border-collapse: collapse;
-  margin: 1rem 0;
-}
+/* Tables: build_site.py writes them as HTML. A table that is still too wide scrolls inside its box
+   instead of widening the page, and stays a real table for screen readers. */
+.table-wrap { max-width: 100%; overflow-x: auto; margin: 1rem 0; }
+table { width: 100%; border-collapse: collapse; }
 th, td {
   border: 1px solid var(--line);
   padding: 0.5rem 0.6rem;
@@ -400,6 +431,15 @@ th, td {
   min-width: 8rem;
 }
 th { background: var(--surface); }
+/* A table with 3 or more columns (class "stack") becomes one card per row on a phone, each cell with
+   its column's name. The names are for the eye only: screen readers already say the column header. */
+@media (max-width: 40rem) {
+  .stack, .stack tbody, .stack tr, .stack td { display: block; }
+  .stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .stack tr { margin: 0 0 0.75rem; padding: 0.35rem 0; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+  .stack td { min-width: 0; padding: 0.35rem 0.9rem; border: 0; }
+  .stack td::before { content: attr(data-label); content: attr(data-label) / ""; display: block; color: var(--muted); font-size: var(--small); font-weight: 700; }
+}
 
 hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 code { font-size: 0.95em; }
@@ -410,18 +450,45 @@ code { font-size: 0.95em; }
   border-top: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: var(--small);
 }
 .cols { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 1.5rem 2rem; }
 .about img { display: block; margin-bottom: 0.5rem; }
 .about p { margin: 0; max-width: 22rem; }
-.site-footer h2 { margin: 0 0 0.5rem; color: var(--fg); font-size: 1rem; }
-.site-footer ul { display: grid; gap: 0.35rem; margin: 0; padding: 0; list-style: none; }
+.site-footer h2 { margin: 0 0 0.25rem; color: var(--fg); font-size: 1rem; }
+.site-footer ul { display: grid; margin: 0; padding: 0; list-style: none; }
+.site-footer li a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
 .site-footer a { color: inherit; overflow-wrap: anywhere; }
 .site-footer a:hover { color: var(--link); }
-.fine { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.9rem; }
-.copyright { margin-top: 0.5rem; margin-bottom: 0; font-size: 0.85rem; }
+.site-footer a[aria-current] { color: var(--fg); font-weight: 700; text-decoration: none; }
+.fine { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.copyright { margin-top: 0.5rem; margin-bottom: 0; }
 @media (max-width: 52rem) {
   .cols { grid-template-columns: 1fr 1fr; }
   .about { grid-column: 1 / -1; }
+  /* The contact column holds the email address: the full width, so it never breaks in the middle. */
+  .cols > :last-child { grid-column: 1 / -1; }
+}
+
+/* Colour changes fade quickly (only colours move, so this is safe with reduced motion too). */
+.btn, .lang, .site-nav a { transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out; }
+
+/* ------------------------------------------------------------------ high contrast and print */
+@media (forced-colors: active) {
+  /* The icons are painted with background-color, which Windows high-contrast mode removes. */
+  .ic { forced-color-adjust: none; background-color: CanvasText; }
+  a .ic { background-color: LinkText; }
+}
+
+/* The legal pages get printed or saved as PDF: black on white, no menus, link addresses shown. */
+@media print {
+  :root {
+    color-scheme: light;
+    --bg: #ffffff; --surface: #ffffff; --card: #ffffff; --notice: #ffffff; --tint: #ffffff;
+    --fg: #000000; --muted: #333333; --link: #000000; --heading-accent: #000000; --line: #999999;
+    --icon-colour: #000000; --warn-bg: #ffffff; --warn-fg: #000000; --warn-line: #000000; --shadow: none;
+  }
+  .skip, .site-nav, .lang, .toc, .to-contents, .site-footer .cols { display: none; }
+  .table-wrap { overflow: visible; }
+  .doc a[href^="http"]::after, .doc a[href^="mailto"]::after { content: " (" attr(href) ")"; }
 }

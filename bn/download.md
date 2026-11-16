@@ -2,6 +2,7 @@
 title: LiquidLyf ডাউনলোড
 lang: bn
 permalink: /bn/download
+description: LiquidLyf অ্যান্ড্রয়েড অ্যাপ এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না। ১.০ ভার্সন এলে খবর পান।
 alternate: /download
 ---
 
@@ -15,8 +16,9 @@ alternate: /download
 
 {% if site.facebook %}<div class="cta"><a class="btn" href="https://www.facebook.com/liquidlyf">কবে আসছে জানতে Facebook-এ ফলো করুন</a></div>{% else %}<div class="cta"><a class="btn" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ নতুন রিলিজের খবর পান</a></div>
 
-নতুন ভার্সন এলেই খবর পেতে GitHub-এ **Watch → Custom → Releases** বেছে নিন। এর জন্য একটা ফ্রি GitHub
+নতুন ভার্সন এলেই খবর পেতে GitHub-এ **<span lang="en">Watch → Custom → Releases</span>** বেছে নিন। এর জন্য একটা ফ্রি GitHub
 অ্যাকাউন্ট লাগবে।{% endif %}
 
-> **LiquidLyf শুধু এই ওয়েবসাইট বা GitHub Releases থেকে নামান।** অন্য কোথাও পাওয়া কপি আসল না-ও
-> হতে পারে।
+**LiquidLyf শুধু এই ওয়েবসাইট বা GitHub Releases থেকে নামান।** অন্য কোথাও পাওয়া কপি আসল না-ও
+হতে পারে।
+{: class="notice"}

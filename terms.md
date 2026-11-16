@@ -2,6 +2,7 @@
 title: Terms and Community Guidelines
 lang: en
 permalink: /terms
+description: The rules for using LiquidLyf, why blood is never for sale, how to report someone, and what happens when someone breaks the rules.
 alternate: /bn/terms
 ---
 
@@ -14,7 +15,7 @@ our [Privacy Policy](/privacy). They are written to keep donors, patients and th
 
 <div class="glance" markdown="1">
 
-**At a glance**
+## At a glance
 - LiquidLyf **only connects people**. It isn't a blood bank, a hospital or an emergency service.
 - You must be **18 or older**, and use your real name, number and blood group.
 - **Blood is never for sale.** Never pay or accept money for it, and donate only at a licensed hospital
@@ -24,7 +25,7 @@ our [Privacy Policy](/privacy). They are written to keep donors, patients and th
 
 </div>
 
-<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#s1">1. What LiquidLyf is, and what it isn’t</a></li><li><a href="#s2">2. Who can use LiquidLyf</a></li><li><a href="#s3">3. Blood is never for sale</a></li><li><a href="#s4">4. Community rules</a></li><li><a href="#s5">5. Reporting and blocking</a></li><li><a href="#s6">6. What happens if someone breaks the rules</a></li><li><a href="#s7">7. Your content</a></li><li><a href="#s8">8. Medical disclaimer</a></li><li><a href="#s9">9. No guarantees, and limits on our liability</a></li><li><a href="#s10">10. The source code and the name</a></li><li><a href="#s11">11. Law</a></li><li><a href="#s12">12. Changes and ending your account</a></li><li><a href="#s13">13. Contact</a></li></ol></nav>
+<nav class="toc" id="contents" aria-label="On this page"><h2>On this page</h2><ol role="list"><li><a href="#s1">1. What LiquidLyf is, and what it isn’t</a></li><li><a href="#s2">2. Who can use LiquidLyf</a></li><li><a href="#s3">3. Blood is never for sale</a></li><li><a href="#s4">4. Community rules</a></li><li><a href="#s5">5. Reporting and blocking</a></li><li><a href="#s6">6. What happens if someone breaks the rules</a></li><li><a href="#s7">7. Your content</a></li><li><a href="#s8">8. Medical disclaimer</a></li><li><a href="#s9">9. No guarantees, and limits on our liability</a></li><li><a href="#s10">10. The source code and the name</a></li><li><a href="#s11">11. Law</a></li><li><a href="#s12">12. Changes and ending your account</a></li><li><a href="#s13">13. Contact</a></li></ol></nav>
 
 <h2 id="s1">1. What LiquidLyf is, and what it isn’t</h2>
 
@@ -37,11 +38,15 @@ LiquidLyf is a free community tool that helps people who need blood find volunta
 - It is **not an emergency service.** In an emergency, contact the hospital or a licensed blood bank,
   or call 999.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s2">2. Who can use LiquidLyf</h2>
 
 - You must be **18 or older**.
 - Use your real name, your own phone number and a correct blood group.
 - One account per person. Keep your password safe, and don't let others use your account.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s3">3. Blood is never for sale</h2>
 
@@ -52,6 +57,8 @@ report them in the app.
 
 Donate **only at a licensed hospital or blood transfusion centre**, where the blood is screened. Never
 donate somewhere else, and never go alone to meet a stranger anywhere but the hospital.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s4">4. Community rules</h2>
 
@@ -73,6 +80,8 @@ Don't:
 - Spam, or use bots, scripts or modified apps to use LiquidLyf.
 - Try to break the app's security, or read data you aren't allowed to see.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s5">5. Reporting and blocking</h2>
 
 - Use **Report** on any request or person that breaks these rules. Choose a reason, such as "It asks
@@ -84,6 +93,8 @@ Don't:
 
 Report a security problem privately, as our
 [security policy](https://github.com/liquidlyf/LiquidLyf/security/policy) explains.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s6">6. What happens if someone breaks the rules</h2>
 
@@ -97,11 +108,15 @@ We may ban accounts without warning for scams, payment requests, threats or hara
 involved, we may report it to the police when the law requires it or someone is in danger. If you
 think a decision was wrong, email us and a different moderator will look at it.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s7">7. Your content</h2>
 
 You own what you post. By posting a request, an offer or a report, you allow LiquidLyf to store it and
 show it to the people described in our Privacy Policy, only to run the app. We may remove content
 that breaks these terms.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s8">8. Medical disclaimer</h2>
 
@@ -113,6 +128,8 @@ at a licensed hospital or blood transfusion centre, where it will be screened.
 The donation rest period and the eligibility hints in the app are general information. **The blood
 centre or doctor always decides whether you can donate.** If you feel unwell, don't donate. Always
 consult a doctor or other qualified healthcare professional for medical advice.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s9">9. No guarantees, and limits on our liability</h2>
 
@@ -128,6 +145,8 @@ As far as the law allows, LiquidLyf, its maintainers and its contributors are no
 or harm that comes from using the app or from meeting other users. Nothing in these terms limits
 rights that the law doesn't allow us to limit.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s10">10. The source code and the name</h2>
 
 LiquidLyf's source code is free software under the
@@ -137,9 +156,13 @@ that licence. The name "LiquidLyf" and the logo aren't covered by the licence; s
 [trademark policy](https://github.com/liquidlyf/LiquidLyf/blob/HEAD/TRADEMARKS.md). Only download
 LiquidLyf from [liquidlyf.github.io/download](/download).
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s11">11. Law</h2>
 
 These terms are governed by the laws of Bangladesh.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s12">12. Changes and ending your account</h2>
 
@@ -147,7 +170,12 @@ We may update these terms. We change the effective date at the top, and for impo
 asks you to accept the new version. If you don't agree, you can stop using LiquidLyf and
 [delete your account](/delete-account) at any time.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s13">13. Contact</h2>
 
-Email **liquidlyf@gmail.com**. Write "Report" in the subject for safety issues, and "Appeal" if you
+Email **[liquidlyf@gmail.com](mailto:liquidlyf@gmail.com)**. Write "Report" in the subject for safety issues, and "Appeal" if you
 want a moderation decision reviewed.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+

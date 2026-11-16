@@ -2,6 +2,7 @@
 title: Privacy Policy
 lang: en
 permalink: /privacy
+description: What data LiquidLyf collects, who can see it, how long it is kept, and how to delete it.
 alternate: /bn/privacy
 ---
 
@@ -15,7 +16,7 @@ people as we can, and explain everything here in plain words.
 
 <div class="glance" markdown="1">
 
-**At a glance**
+## At a glance
 - Your phone number is **never shown publicly**. A requester sees it only if you offer to donate for
   their request, and you see a requester's number only after you offer, while your offer is active.
 - We don't sell your data, we don't show ads, and we don't use advertising or analytics trackers.
@@ -23,27 +24,29 @@ people as we can, and explain everything here in plain words.
 
 </div>
 
-<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#s1">1. Who we are</a></li><li><a href="#s2">2. What we collect</a></li><li><a href="#s3">3. Why we use it</a></li><li><a href="#s4">4. Who can see what</a></li><li><a href="#s5">5. Service providers</a></li><li><a href="#s6">6. How long we keep it</a></li><li><a href="#s7">7. Your choices and rights</a></li><li><a href="#s8">8. Security</a></li><li><a href="#s9">9. Age limit</a></li><li><a href="#s10">10. Changes to this policy</a></li><li><a href="#s11">11. Contact</a></li></ol></nav>
+<nav class="toc" id="contents" aria-label="On this page"><h2>On this page</h2><ol role="list"><li><a href="#s1">1. Who we are</a></li><li><a href="#s2">2. What we collect</a></li><li><a href="#s3">3. Why we use it</a></li><li><a href="#s4">4. Who can see what</a></li><li><a href="#s5">5. Service providers</a></li><li><a href="#s6">6. How long we keep it</a></li><li><a href="#s7">7. Your choices and rights</a></li><li><a href="#s8">8. Security</a></li><li><a href="#s9">9. Age limit</a></li><li><a href="#s10">10. Changes to this policy</a></li><li><a href="#s11">11. Contact</a></li></ol></nav>
 
 <h2 id="s1">1. Who we are</h2>
 
 LiquidLyf is an open-source project run by volunteers. The app is published by **the LiquidLyf maintainers**
 (Bangladesh), who are responsible for your data under this policy.
 
-**Privacy contact:** liquidlyf@gmail.com (please write "Privacy" in the subject).
+**Privacy contact:** [liquidlyf@gmail.com](mailto:liquidlyf@gmail.com?subject=Privacy) (please write "Privacy" in the subject).
 
 The app's source code is public at <https://github.com/liquidlyf/LiquidLyf>, so anyone can check what
 it does with your data.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s2">2. What we collect</h2>
 
-**When you create an account**
+### When you create an account
 - Your email address, and how you sign in (email and password, Google, or both). If you use Google, Google
   shares your name, email address and profile picture link with us. We don't show the picture.
 - Your password is handled by Google's Firebase Authentication. We never see it.
 - That you are 18 or older and accepted these terms, with the date and the version you accepted.
 
-**Your profile**
+### Your profile
 - Full name, phone number, blood group.
 - Gender and birth year. We use them only to check whether you can donate and to count your rest
   period after a donation. They are never shown to other users.
@@ -53,7 +56,7 @@ it does with your data.
 - Whether you chose to be listed as a donor, and when you chose it.
 - Your app language.
 
-**When you use the app**
+### When you use the app
 - **Blood requests you post:** the patient's blood group, the blood component and number of units,
   the hospital and its area, how urgent it is, when the blood is needed, an optional condition (such as
   "surgery" or "dengue") and notes. The **contact person's name and phone number**, and optionally the
@@ -69,7 +72,7 @@ it does with your data.
   donor you asked to donate (only you can see it).
 - **When you last used the app,** updated at most once every 3 days.
 
-**From your phone**
+### From your phone
 - **Push notifications:** your phone subscribes to notification "topics" named after your area and
   blood group (for example, "Savar, B+"), through Google's Firebase Cloud Messaging. We don't
   store a device token. You can stop alerts at any time (section 7).
@@ -82,35 +85,43 @@ it does with your data.
 **We don't collect** your contacts, photos, files, exact location, call logs or SMS messages. We never
 ask for your national ID (NID).
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s3">3. Why we use it</h2>
 
-| Purpose | Data used |
-|---|---|
-| Finding donors for a blood request, and alerting them | Blood group, area, availability, rest period, the request |
-| Letting a donor and a requester call each other | Phone numbers, only after a donor offers |
-| Counting your rest period and reminding you when you can donate again | Gender, birth year, last donation date |
-| Running your account and showing the app in your language | Email, sign-in method, language |
-| Keeping people safe: stopping scams, fake requests and harassment | Reports, blocks, counters, App Check, flagged words such as payment requests |
-| Fixing crashes | Crash reports |
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Purpose</th><th scope="col">Data used</th></tr></thead>
+<tbody>
+<tr><td>Finding donors for a blood request, and alerting them</td><td>Blood group, area, availability, rest period, the request</td></tr>
+<tr><td>Letting a donor and a requester call each other</td><td>Phone numbers, only after a donor offers</td></tr>
+<tr><td>Counting your rest period and reminding you when you can donate again</td><td>Gender, birth year, last donation date</td></tr>
+<tr><td>Running your account and showing the app in your language</td><td>Email, sign-in method, language</td></tr>
+<tr><td>Keeping people safe: stopping scams, fake requests and harassment</td><td>Reports, blocks, counters, App Check, flagged words such as payment requests</td></tr>
+<tr><td>Fixing crashes</td><td>Crash reports</td></tr>
+</tbody></table></div>
 
 We use your data only for these purposes. Your data is never used for advertising and never sold.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s4">4. Who can see what</h2>
 
-| Your data | Who can see it |
-|---|---|
-| Full name | You. Others see only your first name and last initial ("Rahim K.") |
-| Email address | Only you |
-| Phone number | Only you, **plus** the requester of a request you offered to donate for |
-| Blood group and area | Other signed-in users, if you chose to be listed as a donor or when you post or offer on a request |
-| Whether you're available to donate, and when you last used the app | Other signed-in users, if you chose to be listed as a donor. Find donors shows only available donors, and shows "Active this week" instead of a date |
-| Gender, birth year, weight answer | Only you. Others may see "Eligible now" or "Eligible in N days" |
-| Last donation date | Only you. Others see only "Eligible now" or "Eligible in N days" |
-| Donation history | You see all of it. Others see only how many times you donated |
-| Your badges | Only you |
-| A request's blood group, units, hospital, area, urgency and notes | Signed-in users with a verified email |
-| A request's contact name and phone, patient name and ward | The requester, and donors whose offer for that request is still active or who donated. A donor loses access when they withdraw the offer or the requester declines it |
-| Reports you send | Only the LiquidLyf moderators. The person you report isn't told who reported them |
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Your data</th><th scope="col">Who can see it</th></tr></thead>
+<tbody>
+<tr><td>Full name</td><td>You. Others see only your first name and last initial (“Rahim K.”)</td></tr>
+<tr><td>Email address</td><td>Only you</td></tr>
+<tr><td>Phone number</td><td>Only you, <strong>plus</strong> the requester of a request you offered to donate for</td></tr>
+<tr><td>Blood group and area</td><td>Other signed-in users, if you chose to be listed as a donor or when you post or offer on a request</td></tr>
+<tr><td>Whether you’re available to donate, and when you last used the app</td><td>Other signed-in users, if you chose to be listed as a donor. Find donors shows only available donors, and shows “Active this week” instead of a date</td></tr>
+<tr><td>Gender, birth year, weight answer</td><td>Only you. Others may see “Eligible now” or “Eligible in N days”</td></tr>
+<tr><td>Last donation date</td><td>Only you. Others see only “Eligible now” or “Eligible in N days”</td></tr>
+<tr><td>Donation history</td><td>You see all of it. Others see only how many times you donated</td></tr>
+<tr><td>Your badges</td><td>Only you</td></tr>
+<tr><td>A request’s blood group, units, hospital, area, urgency and notes</td><td>Signed-in users with a verified email</td></tr>
+<tr><td>A request’s contact name and phone, patient name and ward</td><td>The requester, and donors whose offer for that request is still active or who donated. A donor loses access when they withdraw the offer or the requester declines it</td></tr>
+<tr><td>Reports you send</td><td>Only the LiquidLyf moderators. The person you report isn’t told who reported them</td></tr>
+</tbody></table></div>
 
 **Moderators** are a small number of volunteers chosen by the maintainers. They can see account
 details when they need to review a report or help with a support request, and their actions are logged.
@@ -118,15 +129,19 @@ details when they need to review a report or help with a support request, and th
 **Please share only what's needed.** When you post a request for someone else, add the patient's
 name and ward only if the patient or their family agrees.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s5">5. Service providers</h2>
 
 We use a few services to run LiquidLyf. They process data for us and only on our instructions.
 
-| Provider | What it does for LiquidLyf | Where |
-|---|---|---|
-| Google Firebase: Authentication, Cloud Firestore, Cloud Messaging, Crashlytics, Remote Config, App Check | Sign-in, the database, notifications, crash reports, app settings, abuse protection | The database is in Mumbai, India. Sign-in, notifications and crash reports may be processed in other countries, including the United States |
-| Cloudflare Workers | Sends the request alerts to donors. When your app asks it to, it receives your user ID, the request ID, the donor's user ID for a notification about an offer or an ask, and, like any web server, your IP address. It stores none of them. A maintainer fixing a problem can watch the calls live, with the IP address and its approximate location; that live view isn't saved. To stop abuse, Cloudflare counts each user's calls for 60 seconds, then forgets them. Its technical logs contain no names, phone numbers or user IDs | Cloudflare's worldwide network |
-| GitHub | Hosts the app download, this website and the source code. It sees your IP address when you visit | United States and worldwide |
+<div class="table-wrap"><table class="stack" role="table">
+<thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Provider</th><th scope="col" role="columnheader">What it does for LiquidLyf</th><th scope="col" role="columnheader">Where</th></tr></thead>
+<tbody role="rowgroup">
+<tr role="row"><td role="cell" data-label="Provider">Google Firebase: Authentication, Cloud Firestore, Cloud Messaging, Crashlytics, Remote Config, App Check</td><td role="cell" data-label="What it does for LiquidLyf">Sign-in, the database, notifications, crash reports, app settings, abuse protection</td><td role="cell" data-label="Where">The database is in Mumbai, India. Sign-in, notifications and crash reports may be processed in other countries, including the United States</td></tr>
+<tr role="row"><td role="cell" data-label="Provider">Cloudflare Workers</td><td role="cell" data-label="What it does for LiquidLyf">Sends the request alerts to donors. When your app asks it to, it receives your user ID, the request ID, the donor’s user ID for a notification about an offer or an ask, and, like any web server, your IP address. It stores none of them. A maintainer fixing a problem can watch the calls live, with the IP address and its approximate location; that live view isn’t saved. To stop abuse, Cloudflare counts each user’s calls for 60 seconds, then forgets them. Its technical logs contain no names, phone numbers or user IDs</td><td role="cell" data-label="Where">Cloudflare’s worldwide network</td></tr>
+<tr role="row"><td role="cell" data-label="Provider">GitHub</td><td role="cell" data-label="What it does for LiquidLyf">Hosts the app download, this website and the source code. It sees your IP address when you visit</td><td role="cell" data-label="Where">United States and worldwide</td></tr>
+</tbody></table></div>
 
 Their own privacy policies: [Google](https://policies.google.com/privacy) ·
 [Firebase](https://firebase.google.com/support/privacy) ·
@@ -139,19 +154,25 @@ Bangladesh, and each provider protects data in transit and at rest.
 We share data with authorities **only** when Bangladeshi law requires it, or to protect someone from
 serious harm.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s6">6. How long we keep it</h2>
 
-| Data | How long |
-|---|---|
-| Your account and profile | Until you delete your account |
-| An open request | Until it is fulfilled, cancelled or expires (one day after the "needed by" time) |
-| Closed requests and offers | Visible to the people involved for 90 days. Then all contact details, donors' phone numbers, messages, notes and the reason for closing are deleted. What stays is the short names (such as "Rahim K."), blood group, area, date and outcome |
-| Your donation history | Until you delete your account |
-| Your past requests and offers, after you delete your account | Kept as history without your name, phone number, notes or messages, so other people's records stay complete ([details](/delete-account)) |
-| In-app notifications | 60 days |
-| Reports and moderators' action log | 1 year, to prevent repeat abuse |
-| Crash reports | 90 days |
-| Earlier versions of changed or deleted data | Up to 1 hour, readable only by the project's administrators. We keep no backups |
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Data</th><th scope="col">How long</th></tr></thead>
+<tbody>
+<tr><td>Your account and profile</td><td>Until you delete your account</td></tr>
+<tr><td>An open request</td><td>Until it is fulfilled, cancelled or expires (one day after the “needed by” time)</td></tr>
+<tr><td>Closed requests and offers</td><td>Visible to the people involved for 90 days. Then all contact details, donors’ phone numbers, messages, notes and the reason for closing are deleted. What stays is the short names (such as “Rahim K.”), blood group, area, date and outcome</td></tr>
+<tr><td>Your donation history</td><td>Until you delete your account</td></tr>
+<tr><td>Your past requests and offers, after you delete your account</td><td>Kept as history without your name, phone number, notes or messages, so other people’s records stay complete (<a href="/delete-account">details</a>)</td></tr>
+<tr><td>In-app notifications</td><td>60 days</td></tr>
+<tr><td>Reports and moderators’ action log</td><td>1 year, to prevent repeat abuse</td></tr>
+<tr><td>Crash reports</td><td>90 days</td></tr>
+<tr><td>Earlier versions of changed or deleted data</td><td>Up to 1 hour, readable only by the project’s administrators. We keep no backups</td></tr>
+</tbody></table></div>
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s7">7. Your choices and rights</h2>
 
@@ -170,13 +191,15 @@ serious harm.
   be declined.
 - **Delete your account:** in the app under Settings → Delete your account, or without the app at
   [liquidlyf.github.io/delete-account](/delete-account).
-- **Get a copy of your data,** or ask any question about it: email liquidlyf@gmail.com from the email
+- **Get a copy of your data,** or ask any question about it: email [liquidlyf@gmail.com](mailto:liquidlyf@gmail.com?subject=Privacy) from the email
   address of your account. We reply within 30 days.
 
 Bangladesh's Personal Data Protection Act, 2026 gives you rights to access, correct and erase your data,
 to get a copy of it, and to withdraw consent. If you think we have handled your data wrongly, please
 tell us first, so we can fix it. You can also complain to the data protection authority set up under
 that Act.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s8">8. Security</h2>
 
@@ -190,19 +213,28 @@ No system is perfect. If a breach puts you at risk, we will tell you in the app 
 inform the authorities when the law requires it. To report a security problem, see our
 [security policy](https://github.com/liquidlyf/LiquidLyf/security/policy).
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s9">9. Age limit</h2>
 
 LiquidLyf is only for people aged **18 or older**. We don't knowingly collect data from children. If you
 believe a child has an account, email us and we will delete it.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
 
 <h2 id="s10">10. Changes to this policy</h2>
 
 When we change this policy, we update the effective date at the top. For important changes, the app
 asks you to read and accept the new version. Earlier versions stay in the website's public history.
 
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+
 <h2 id="s11">11. Contact</h2>
 
-Email **liquidlyf@gmail.com**, with "Privacy" in the subject. We reply within 30 days, usually much sooner.
+Email **[liquidlyf@gmail.com](mailto:liquidlyf@gmail.com?subject=Privacy)**, with "Privacy" in the subject. We reply within 30 days, usually much sooner.
 
 **LiquidLyf is not an emergency service.** If someone needs blood urgently, contact the hospital or a
 licensed blood bank now, or call 999.
+
+<p class="to-contents"><a href="#contents">Back to contents</a></p>
+

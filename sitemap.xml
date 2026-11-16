@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://liquidlyf.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/privacy"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/terms"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/terms"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/delete-account</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/delete-account"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/delete-account"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/delete-account"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/download</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/download"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/download"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/download"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/bn/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/bn/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/privacy"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/privacy"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/bn/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/terms"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/terms"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/bn/delete-account</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/delete-account"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/delete-account"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/delete-account"/>
+  </url>
+  <url>
+    <loc>https://liquidlyf.github.io/bn/download</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liquidlyf.github.io/download"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://liquidlyf.github.io/bn/download"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://liquidlyf.github.io/download"/>
+  </url>
+</urlset>

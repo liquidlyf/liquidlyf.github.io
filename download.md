@@ -2,6 +2,7 @@
 title: Download LiquidLyf
 lang: en
 permalink: /download
+description: LiquidLyf for Android is being tested and isn't available to download yet. Get an alert when version 1.0 is out.
 alternate: /bn/download
 ---
 
@@ -18,5 +19,6 @@ in Bangla and English.
 On GitHub, choose **Watch → Custom → Releases** to get an alert when a new version is out. You need a
 free GitHub account.{% endif %}
 
-> **Only install LiquidLyf from this website or from GitHub Releases.** A copy from anywhere else may
-> not be genuine.
+**Only install LiquidLyf from this website or from GitHub Releases.** A copy from anywhere else may
+not be genuine.
+{: class="notice"}

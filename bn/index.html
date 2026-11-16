@@ -28,12 +28,12 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
         <a class="btn-link" href="https://github.com/liquidlyf/LiquidLyf">GitHub-এ নতুন রিলিজের খবর পান</a>
         {%- endif %}
       </div>
-      <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% unless site.facebook %} রিলিজ হলেই খবর পেতে GitHub-এ <strong>Watch → Custom → Releases</strong> বেছে নিন (একটা ফ্রি GitHub অ্যাকাউন্ট লাগবে)।{% endunless %}{% endif %}</p>
-      <aside class="emergency" aria-label="জরুরি অবস্থা">
+      <p class="cta-note">{% if site.released %}অ্যান্ড্রয়েড ৭.০ বা তার পরের ভার্সনে চলে · ফ্রি, কোনো বিজ্ঞাপন নেই{% else %}অ্যাপটা এখন পরীক্ষা করা হচ্ছে, তাই এখনো ডাউনলোড করা যাবে না।{% unless site.facebook %} রিলিজ হলেই খবর পেতে GitHub-এ <strong lang="en">Watch → Custom → Releases</strong> বেছে নিন (একটা ফ্রি GitHub অ্যাকাউন্ট লাগবে)।{% endunless %}{% endif %}</p>
+      <div class="emergency" role="note">
         <span class="ic ic-alert" aria-hidden="true"></span>
         <p><strong>LiquidLyf জরুরি সেবা নয়।</strong> এখনই রক্ত লাগলে হাসপাতাল বা লাইসেন্স করা ব্লাড
           ব্যাংকে যোগাযোগ করুন, অথবা <a href="tel:999">৯৯৯</a>-এ কল করুন।</p>
-      </aside>
+      </div>
     </div>
     <div class="hero-art">
       {%- if site.released and page.screenshot %}
@@ -47,7 +47,7 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
 </section>
 
 <section class="trust" aria-label="কেন LiquidLyf">
-  <ul class="wide trust-list">
+  <ul class="wide trust-list" role="list">
     <li><span class="ic ic-gift" aria-hidden="true"></span>ফ্রি</li>
     <li><span class="ic ic-no-ads" aria-hidden="true"></span>কোনো বিজ্ঞাপন নেই</li>
     <li><span class="ic ic-lock" aria-hidden="true"></span>আপনার নম্বর গোপন থাকে</li>
@@ -63,7 +63,7 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
     <div class="two">
       <article class="card">
         <h3><span class="ic ic-drop" aria-hidden="true"></span>রক্ত লাগবে?</h3>
-        <ol class="steps">
+        <ol class="steps" role="list">
           <li><span class="badge"><span class="ic ic-post" aria-hidden="true"></span></span>
             <p><strong>পোস্ট দিন।</strong> অ্যাপে <strong>“রক্তের অনুরোধ করুন”</strong> চাপুন, তারপর
               রক্তের গ্রুপ, হাসপাতাল আর কবে লাগবে লিখে দিন।</p></li>
@@ -80,7 +80,7 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
       </article>
       <article class="card">
         <h3><span class="ic ic-heart" aria-hidden="true"></span>রক্ত দিতে চান?</h3>
-        <ol class="steps">
+        <ol class="steps" role="list">
           <li><span class="badge"><span class="ic ic-user-add" aria-hidden="true"></span></span>
             <p><strong>রক্তদাতা হিসেবে নাম দিন।</strong> আপনার রক্তের গ্রুপ আর এলাকা দিন। তালিকায়
               আপনার ফোন নম্বর কখনো দেখানো হয় না।</p></li>
@@ -100,7 +100,7 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
     <h2>নিরাপত্তার কথা ভেবে বানানো</h2>
     <p class="intro">আপনার ফোন নম্বর আর রক্তের গ্রুপ আপনি আমাদের ভরসা করে দেন। LiquidLyf আপনাকে যেভাবে
       নিরাপদ রাখে:</p>
-    <ul class="tiles">
+    <ul class="tiles" role="list">
       <li class="tile"><span class="badge"><span class="ic ic-lock" aria-hidden="true"></span></span>
         <h3>আপনার নম্বর কোথাও পাবলিক থাকে না</h3>
         <p>রক্তদাতা রাজি হলে তবেই যিনি পোস্ট দিয়েছেন তিনি তাঁর নম্বর দেখেন। রক্তদাতাও পোস্টের
@@ -133,19 +133,19 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
   <div class="wide">
     <h2>প্রশ্ন ও উত্তর</h2>
     <div class="faq">
-      <details>
+      <details id="faq-free">
         <summary>LiquidLyf কি ফ্রি?</summary>
         <p>হ্যাঁ, সবার জন্য ফ্রি। কোনো বিজ্ঞাপন নেই, কিছু কিনতেও হয় না। স্বেচ্ছাসেবকেরা এটা
           বানিয়েছেন, আর এটা চলে Firebase ও Cloudflare-এর ফ্রি প্ল্যানে।</p>
       </details>
-      <details>
+      <details id="faq-phone-number">
         <summary>আমার ফোন নম্বর কে দেখতে পায়?</summary>
         <p>পাবলিকলি কেউ না: আপনার নম্বর কোনো তালিকায় থাকে না। আপনি পোস্ট দিলে শুধু যাঁরা রক্ত দিতে
           রাজি হয়েছেন, তাঁরাই যোগাযোগের নম্বর দেখেন, তাও যতক্ষণ তাঁদের সাড়া চালু থাকে। আপনি রাজি
           হলে, যিনি পোস্ট দিয়েছেন তিনি আপনার নম্বর দেখেন। <strong>“রক্তদাতা খুঁজুন”</strong>-এ
           কারও নম্বর দেখা যায় না। বিস্তারিত আছে <a href="/bn/privacy">গোপনীয়তা নীতিতে</a>।</p>
       </details>
-      <details>
+      <details id="faq-play-store">
         <summary>Play Store-এ নেই কেন? ফাইলটা কি নিরাপদ?</summary>
         <p>আপাতত আমরা নিজেরাই অ্যাপটা দিচ্ছি, এই ওয়েবসাইটে আর GitHub-এ। পরে Play Store-এও আসতে
           পারে। সব আসল কপি একই ডিজিটাল সিগনেচার দিয়ে সাইন করা, আর অ্যাপের কোড যে কেউ দেখে নিতে
@@ -153,17 +153,17 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
           <strong>শুধু এই ওয়েবসাইট বা GitHub Releases থেকে নামান:</strong> অন্য কোথাও পাওয়া কপি ভুয়া
           হতে পারে।</p>
       </details>
-            <details>
+            <details id="faq-who-can-donate">
         <summary>কারা রক্ত দিতে পারবেন, কত দিন পরপর?</summary>
         <p>অ্যাপ এই নিয়ম মানে: বয়স ১৮ থেকে ৬০ বছর, ওজন অন্তত ৪৫ কেজি, আর আগের রক্তদানের পর অন্তত
           ১২০ দিন (প্রায় ৪ মাস)। দিনের হিসাব অ্যাপই রাখে। রক্ত দেওয়ার দিন ডাক্তার বা ব্লাড ব্যাংক
           আপনাকে দেখে শেষ সিদ্ধান্ত নেবেন।</p>
       </details>
-      <details>
+      <details id="faq-delete-account">
         <summary>অ্যাকাউন্ট কীভাবে মুছব?</summary>
         <p>অ্যাপে যান <strong>সেটিংস → আপনার অ্যাকাউন্ট মুছে ফেলুন</strong>। অ্যাপ না থাকলে আপনার
-          অ্যাকাউন্টের ইমেইল থেকে liquidlyf@gmail.com-এ মেইল করুন, সাবজেক্টে লিখুন “Delete my
-          account”। <a href="/bn/delete-account">বিস্তারিত দেখুন</a>।</p>
+          অ্যাকাউন্টের ইমেইল থেকে <a href="mailto:liquidlyf@gmail.com?subject=Delete%20my%20account">liquidlyf@gmail.com</a>-এ মেইল করুন, সাবজেক্টে লিখুন “<span lang="en">Delete my
+          account</span>”। <a href="/bn/delete-account">বিস্তারিত দেখুন</a>।</p>
       </details>
     </div>
   </div>
@@ -174,16 +174,16 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
     <div class="card">
       <h2>রক্তদাতা ক্লাব আর সংগঠনের জন্য</h2>
       <p>ব্লাড ডোনার ক্লাব, হাসপাতালের ব্লাড ব্যাংক বা কোনো এনজিও চালান? আমরা একসাথে কাজ করতে চাই।
-        <a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a>-এ মেইল করুন, সাবজেক্টে লিখুন
-        “Partner”।</p>
+        <a href="mailto:liquidlyf@gmail.com?subject=Partner">liquidlyf@gmail.com</a>-এ মেইল করুন, সাবজেক্টে লিখুন
+        “<span lang="en">Partner</span>”।</p>
     </div>
     <div class="card">
       <h2>LiquidLyf বানাতে হাত লাগান</h2>
       <p>স্বেচ্ছাসেবকেরা মিলে LiquidLyf বানাচ্ছেন। ডেভেলপার, অনুবাদক, ডিজাইনার, টেস্টার, সবাইকে
         স্বাগতম। <a href="https://github.com/liquidlyf/LiquidLyf/blob/HEAD/CONTRIBUTING.md">কীভাবে
         যুক্ত হবেন</a> দেখুন (ইংরেজিতে)।</p>
-            <ul class="links">
-        <li><a href="https://github.com/liquidlyf/LiquidLyf">⭐ GitHub-এ LiquidLyf-কে স্টার দিন</a></li>
+            <ul class="links" role="list">
+        <li><a href="https://github.com/liquidlyf/LiquidLyf"><span class="ic ic-star" aria-hidden="true"></span>GitHub-এ LiquidLyf-কে স্টার দিন</a></li>
         <li><a href="https://github.com/liquidlyf/LiquidLyf/releases.atom" type="application/atom+xml">রিলিজের
           ফিড (RSS)</a>, ফিড রিডারের জন্য, কোনো অ্যাকাউন্ট লাগবে না</li>
       </ul>
@@ -200,7 +200,7 @@ description: LiquidLyf একটা ফ্রি অ্যান্ড্রয�
     <div class="cta"><a class="btn" href="/bn/download"><span class="ic ic-download" aria-hidden="true"></span>অ্যান্ড্রয়েডে ডাউনলোড করুন</a></div>
     {%- else %}
     <h2>শিগগিরই আসছে</h2>
-    <p>LiquidLyf এখন পরীক্ষা করা হচ্ছে।{% if site.facebook %} কবে আসছে জানতে আমাদের ফলো করুন।{% else %} রিলিজ হলেই খবর পেতে GitHub-এ <strong>Watch → Custom → Releases</strong> বেছে নিন।{% endif %}</p>
+    <p>LiquidLyf এখন পরীক্ষা করা হচ্ছে।{% if site.facebook %} কবে আসছে জানতে আমাদের ফলো করুন।{% else %} রিলিজ হলেই খবর পেতে GitHub-এ <strong lang="en">Watch → Custom → Releases</strong> বেছে নিন।{% endif %}</p>
     <div class="cta">
       {%- if site.facebook %}
       <a class="btn" href="https://www.facebook.com/liquidlyf">Facebook-এ ফলো করুন</a>

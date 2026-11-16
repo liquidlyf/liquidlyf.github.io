@@ -9,18 +9,23 @@
   {%- assign description = page.description | default: site.description -%}
 {%- endif -%}
 {%- assign switch_to = page.alternate | default: other_home -%}
-{%- if page.title == site.title -%}{%- assign full_title = site.title -%}{%- else -%}{%- capture full_title %}{{ page.title }} · {{ site.title }}{% endcapture -%}{%- endif %}
+{%- if page.home and page.share_title -%}{%- assign full_title = page.share_title -%}{%- elsif page.title == site.title -%}{%- assign full_title = site.title -%}{%- else -%}{%- capture full_title %}{{ page.title }} · {{ site.title }}{% endcapture -%}{%- endif %}
 <html lang="{{ page.lang | default: site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
-  <title>{{ full_title }}</title>
-  <meta name="description" content="{{ description }}">
+  <title>{{ full_title | escape }}</title>
+  <meta name="description" content="{{ description | escape }}">
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex">
+  {%- else %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- endif %}
   {%- if page.alternate %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url }}{{ page.url }}">
   <link rel="alternate" hreflang="{% if bn %}en{% else %}bn{% endif %}" href="{{ site.url }}{{ page.alternate }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{% if bn %}{{ page.alternate }}{% else %}{{ page.url }}{% endif %}">
   {%- endif %}
   <meta name="theme-color" content="#fffbff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1a1111" media="(prefers-color-scheme: dark)">
@@ -29,17 +34,20 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LiquidLyf">
-  <meta property="og:title" content="{{ page.share_title | default: full_title }}">
-  <meta property="og:description" content="{{ description }}">
+  <meta property="og:title" content="{{ page.share_title | default: full_title | escape }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  {%- unless page.noindex %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {%- endunless %}
   <meta property="og:image" content="{{ site.url }}/assets/share-{% if bn %}bn{% else %}en{% endif %}.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{% if bn %}LiquidLyf: রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন{% else %}LiquidLyf: Need blood? Find donors near you{% endif %}">
   <meta property="og:locale" content="{% if bn %}bn_BD{% else %}en_US{% endif %}">
   <meta property="og:locale:alternate" content="{% if bn %}en_US{% else %}bn_BD{% endif %}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css?v={{ site.css_version }}">
 </head>
 <body class="{% if page.home %}page-home{% else %}page-doc{% endif %}">
   <a class="skip" href="#main">{% if bn %}মূল লেখায় যান{% else %}Skip to content{% endif %}</a>
@@ -71,13 +79,12 @@
       {%- endif %}
     </div>
   </header>
-  {%- if bn and site.bn_reviewed != true %}
-  <div class="wrap">
-    <p class="notice">এই বাংলা লেখাটি এখনো যাচাই করা হচ্ছে। দুই ভাষার লেখায় কোনো পার্থক্য থাকলে
-      {% if page.alternate %}<a href="{{ page.alternate }}" lang="en" hreflang="en">ইংরেজিটাই</a>{% else %}ইংরেজিটাই{% endif %} মানা হবে।</p>
-  </div>
-  {%- endif %}
   <main id="main"{% unless page.home %} class="wrap doc"{% endunless %}>
+    {%- comment %} Inside <main>, so it belongs to a landmark. The link text is Bangla, so no lang="en". {% endcomment %}
+    {%- if bn and site.bn_reviewed != true %}
+    {% if page.home %}<div class="wide">{% endif %}<p class="notice">এই বাংলা লেখাটি এখনো যাচাই করা হচ্ছে। দুই ভাষার লেখায় কোনো পার্থক্য থাকলে
+      {% if page.alternate %}<a href="{{ page.alternate }}" hreflang="en">ইংরেজিটাই</a>{% else %}ইংরেজিটাই{% endif %} মানা হবে।</p>{% if page.home %}</div>{% endif %}
+    {%- endif %}
     {{ content }}
   </main>
   <footer class="site-footer">
@@ -89,28 +96,28 @@
       {%- if bn %}
       <nav class="col" aria-label="অ্যাপ">
         <h2>অ্যাপ</h2>
-        <ul><li><a href="/bn/download">ডাউনলোড</a></li><li><a href="/bn/#how">কীভাবে কাজ করে</a></li><li><a href="/bn/#faq">প্রশ্নোত্তর</a></li></ul>
+        <ul role="list"><li><a href="/bn/download"{% if page.url == "/bn/download" %} aria-current="page"{% endif %}>ডাউনলোড</a></li><li><a href="/bn/#how">কীভাবে কাজ করে</a></li><li><a href="/bn/#faq">প্রশ্নোত্তর</a></li></ul>
       </nav>
       <nav class="col" aria-label="নিয়মকানুন">
         <h2>নিয়মকানুন</h2>
-        <ul><li><a href="/bn/privacy">গোপনীয়তা নীতি</a></li><li><a href="/bn/terms">শর্তাবলি</a></li><li><a href="/bn/delete-account">অ্যাকাউন্ট মুছে ফেলুন</a></li></ul>
+        <ul role="list"><li><a href="/bn/privacy"{% if page.url == "/bn/privacy" %} aria-current="page"{% endif %}>গোপনীয়তা নীতি</a></li><li><a href="/bn/terms"{% if page.url == "/bn/terms" %} aria-current="page"{% endif %}>শর্তাবলি</a></li><li><a href="/bn/delete-account"{% if page.url == "/bn/delete-account" %} aria-current="page"{% endif %}>অ্যাকাউন্ট মুছে ফেলুন</a></li></ul>
       </nav>
       <nav class="col" aria-label="যোগাযোগ">
         <h2>যোগাযোগ</h2>
-        <ul>{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
+        <ul role="list">{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
       </nav>
       {%- else %}
       <nav class="col" aria-label="App">
         <h2>App</h2>
-        <ul><li><a href="/download">Download</a></li><li><a href="/#how">How it works</a></li><li><a href="/#faq">FAQ</a></li></ul>
+        <ul role="list"><li><a href="/download"{% if page.url == "/download" %} aria-current="page"{% endif %}>Download</a></li><li><a href="/#how">How it works</a></li><li><a href="/#faq">FAQ</a></li></ul>
       </nav>
       <nav class="col" aria-label="Legal">
         <h2>Legal</h2>
-        <ul><li><a href="/privacy">Privacy Policy</a></li><li><a href="/terms">Terms</a></li><li><a href="/delete-account">Delete your account</a></li></ul>
+        <ul role="list"><li><a href="/privacy"{% if page.url == "/privacy" %} aria-current="page"{% endif %}>Privacy Policy</a></li><li><a href="/terms"{% if page.url == "/terms" %} aria-current="page"{% endif %}>Terms</a></li><li><a href="/delete-account"{% if page.url == "/delete-account" %} aria-current="page"{% endif %}>Delete your account</a></li></ul>
       </nav>
       <nav class="col" aria-label="Contact">
         <h2>Contact</h2>
-        <ul>{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
+        <ul role="list">{% if site.facebook %}<li><a href="https://www.facebook.com/liquidlyf">Facebook</a></li>{% endif %}<li><a href="https://github.com/liquidlyf/LiquidLyf">GitHub</a></li><li><a href="mailto:liquidlyf@gmail.com">liquidlyf@gmail.com</a></li></ul>
       </nav>
       {%- endif %}
     </div>
