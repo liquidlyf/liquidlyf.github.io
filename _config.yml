@@ -18,9 +18,10 @@ facebook: false
 # short "not available yet" page. build_site.py sets it from --released.
 released: false
 
-# true since the maintainer reviewed the Bangla pages (C8, 16 Nov 2026). false shows a notice on each
-# Bangla page that the English version applies if the two differ.
-bn_reviewed: true
+# false shows a notice on each Bangla page that the English version applies if the two differ.
+# Still false after the C8 review (16 Nov 2026): the maintainer chose to keep the notice, unchanged,
+# until the lawyer (C7) says which language wins. true removes it.
+bn_reviewed: false
 
 # The stylesheet's version: build_site.py puts a hash of site.css here, and the page asks for
 # site.css?v=<hash>. GitHub Pages lets browsers keep files for 10 minutes, so without it a visitor
