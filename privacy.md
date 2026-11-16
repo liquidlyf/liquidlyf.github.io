@@ -165,8 +165,9 @@ serious harm.
   shared with that offer until it is deleted, 90 days after the request closes (section 6), and may
   have written it down.
 - **Block someone:** you stop seeing their requests, and they can't ask you to donate or offer on
-  your requests. If they had already offered, decline that offer, so they stop seeing your
-  request's contact details. Once their donation is recorded, the offer can't be declined.
+  your requests. If you block them from their offer on your request, that offer is declined too, so
+  they stop seeing your request's contact details. Once their donation is recorded, the offer can't
+  be declined.
 - **Delete your account:** in the app under Settings → Delete your account, or without the app at
   [liquidlyf.github.io/delete-account](/delete-account).
 - **Get a copy of your data,** or ask any question about it: email liquidlyf@gmail.com from the email
