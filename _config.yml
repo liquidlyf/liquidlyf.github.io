@@ -9,10 +9,10 @@ lang: en
 # The footer's copyright year is the build's year (site.time), in Bangladesh time.
 timezone: Asia/Dhaka
 
-# false until P confirms that the Facebook page (facebook.com/liquidlyf) answers messages
-# automatically (project-plan/12-social-media.md, item 1). true shows the Facebook link in the footer
-# and "Follow us on Facebook" on the home page instead of GitHub.
-facebook: false
+# true since 16 Nov 2026: the Facebook page (facebook.com/liquidlyf) answers messages automatically
+# (project-plan/12-social-media.md, item 1; the maintainer tested it). true shows the Facebook link in
+# the footer and "Follow us on Facebook" on the home page and /download instead of GitHub's Watch.
+facebook: true
 
 # false until v1.0 is on GitHub Releases: the home page says "Coming soon", and /download is a
 # short "not available yet" page. build_site.py sets it from --released.
