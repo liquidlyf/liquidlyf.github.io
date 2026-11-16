@@ -23,7 +23,7 @@ bn_reviewed: false
 # The stylesheet's version: build_site.py puts a hash of site.css here, and the page asks for
 # site.css?v=<hash>. GitHub Pages lets browsers keep files for 10 minutes, so without it a visitor
 # could get new pages with the old stylesheet right after a change.
-css_version: 59eebca8b9
+css_version: dfc385588d
 
 markdown: kramdown
 kramdown:

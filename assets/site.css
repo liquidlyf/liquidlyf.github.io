@@ -76,6 +76,9 @@ html[lang="bn"] body {
   /* Android: Noto Sans Bengali. Apple: Kohinoor Bangla, Bangla Sangam MN. Windows: Nirmala UI, Vrinda. */
   font-family: "Noto Sans Bengali", "Kohinoor Bangla", "Bangla Sangam MN", "Nirmala UI", "Vrinda",
     system-ui, sans-serif;
+  /* Bangla letters look smaller than English ones at the same size: body text is 17 px
+     (the maintainer, C17-b, 16 Nov 2026). Sizes set in rem (headings, buttons) stay as they are. */
+  font-size: 1.0625rem;
   line-height: 1.75;
 }
 
