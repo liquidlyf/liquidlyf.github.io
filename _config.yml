@@ -6,6 +6,8 @@ description: A free, privacy-first app that connects blood donors with people wh
 description_bn: রক্তদাতা আর যাঁদের রক্ত লাগবে, তাঁদের যোগাযোগ করিয়ে দেয় ফ্রি অ্যাপ LiquidLyf। আপনার ফোন নম্বর কোথাও পাবলিক থাকে না।
 url: https://liquidlyf.github.io
 lang: en
+# The footer's copyright year is the build's year (site.time), in Bangladesh time.
+timezone: Asia/Dhaka
 
 # false until P confirms that the Facebook page (facebook.com/liquidlyf) answers messages
 # automatically (project-plan/12-social-media.md, item 1). true shows the Facebook link in the footer

@@ -9,6 +9,10 @@
   {%- assign description = page.description | default: site.description -%}
 {%- endif -%}
 {%- assign switch_to = page.alternate | default: other_home -%}
+{%- comment %} The year of the build (C15): every publish and the yearly rebuild (.github/workflows/yearly-rebuild.yml)
+   update it. Bangla pages show Bangla digits. {% endcomment -%}
+{%- assign year = site.time | date: "%Y" -%}
+{%- assign year_bn = year | replace: "0", "০" | replace: "1", "১" | replace: "2", "২" | replace: "3", "৩" | replace: "4", "৪" | replace: "5", "৫" | replace: "6", "৬" | replace: "7", "৭" | replace: "8", "৮" | replace: "9", "৯" -%}
 {%- if page.home and page.share_title -%}{%- assign full_title = page.share_title -%}{%- elsif page.title == site.title -%}{%- assign full_title = site.title -%}{%- else -%}{%- capture full_title %}{{ page.title }} · {{ site.title }}{% endcapture -%}{%- endif %}
 <html lang="{{ page.lang | default: site.lang }}">
 <head>
@@ -123,7 +127,7 @@
     </div>
     <p class="wide fine">{% if bn %}<strong>LiquidLyf জরুরি সেবা নয়।</strong> জরুরি দরকারে হাসপাতাল বা ব্লাড ব্যাংকে যোগাযোগ করুন, অথবা ৯৯৯-এ কল করুন।{% else %}<strong>LiquidLyf is not an emergency service.</strong> In an emergency, contact the hospital or a blood bank, or call 999.{% endif %}</p>
     {%- comment %} Copyright as in LICENSING.md; page text CC BY 4.0, code AGPL, name and logo neither (TRADEMARKS.md). {% endcomment %}
-    <p class="wide copyright">{% if bn %}© ২০২৫–২০২৬ LiquidLyf-এর অবদানকারীরা। ওয়েবসাইটের লেখা: <a href="https://creativecommons.org/licenses/by/4.0/deed.bn" lang="en">CC BY 4.0</a>। অ্যাপের কোড: <a href="https://www.gnu.org/licenses/agpl-3.0.html" lang="en">AGPL-3.0-or-later</a>। LiquidLyf নাম আর লোগো এই লাইসেন্সগুলোর আওতায় পড়ে না।{% else %}© 2025–2026 The LiquidLyf contributors. Website text: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. App code: <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0-or-later</a>. The LiquidLyf name and logo aren’t covered by these licences.{% endif %}</p>
+    <p class="wide copyright">{% if bn %}© ২০২৫–{{ year_bn }} LiquidLyf-এর অবদানকারীরা। ওয়েবসাইটের লেখা: <a href="https://creativecommons.org/licenses/by/4.0/deed.bn" lang="en">CC BY 4.0</a>। অ্যাপের কোড: <a href="https://www.gnu.org/licenses/agpl-3.0.html" lang="en">AGPL-3.0-or-later</a>। LiquidLyf নাম আর লোগো এই লাইসেন্সগুলোর আওতায় পড়ে না।{% else %}© 2025–{{ year }} The LiquidLyf contributors. Website text: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. App code: <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0-or-later</a>. The LiquidLyf name and logo aren’t covered by these licences.{% endif %}</p>
   </footer>
 </body>
 </html>

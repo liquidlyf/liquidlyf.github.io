@@ -18,5 +18,12 @@ the Privacy Policy then go through review together, in one pull request there.
 
 The site has no scripts, no cookies, no analytics and no web fonts.
 
+**The footer's copyright year** is the year GitHub Pages built the site (`site.time`), so every
+publish updates it. `.github/workflows/yearly-rebuild.yml` asks Pages to build again every
+1 January, with the repo's own `GITHUB_TOKEN` and nothing else. GitHub switches off scheduled
+workflows after 60 days without activity in the repo: **in January, check the footer.** If it still
+shows last year, open Actions → "Yearly rebuild", click **Enable workflow** if GitHub shows it, then
+**Run workflow**.
+
 The text of the pages is licensed under CC BY 4.0, like the app's documentation. The LiquidLyf name and
 logo are not: see [TRADEMARKS.md](https://github.com/liquidlyf/LiquidLyf/blob/HEAD/TRADEMARKS.md).
