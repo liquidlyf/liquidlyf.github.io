@@ -177,7 +177,7 @@ serious harm.
 <h2 id="s7">7. Your choices and rights</h2>
 
 - **See and correct** your profile at any time in the app.
-- **Stop being listed as a donor:** Settings → Privacy. Your donor card is removed at once, and you
+- **Stop being listed as a donor:** Profile → ⚙ Settings → Privacy. Your donor card is removed at once, and you
   stop getting request alerts.
 - **Pause alerts:** turn off "Ready to donate" on the Home screen or in Settings, or turn off
   notifications in Android settings.
@@ -189,7 +189,7 @@ serious harm.
   your requests. If you block them from their offer on your request, that offer is declined too, so
   they stop seeing your request's contact details. Once their donation is recorded, the offer can't
   be declined.
-- **Delete your account:** in the app under Settings → Delete your account, or without the app at
+- **Delete your account:** in the app under Profile → ⚙ Settings → Delete your account, or without the app at
   [liquidlyf.github.io/delete-account](/delete-account).
 - **Get a copy of your data,** or ask any question about it: email [liquidlyf@gmail.com](mailto:liquidlyf@gmail.com?subject=Privacy) from the email
   address of your account. We reply within 30 days.

@@ -14,7 +14,7 @@ Uninstalling the app does **not** delete your account. Use one of the two ways b
 
 ## In the app (fastest)
 
-1. Open **LiquidLyf** and go to **Settings → Delete your account**.
+1. Open **LiquidLyf** and go to **Profile → ⚙ Settings → Delete your account**.
 2. Read what will be deleted. Type **DELETE** in the box, and enter your password if your account has
    one.
 3. Tap **Delete my account**.
