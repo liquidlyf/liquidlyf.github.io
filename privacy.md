@@ -8,7 +8,7 @@ alternate: /bn/privacy
 
 # LiquidLyf Privacy Policy
 
-**Effective date:** 15 November 2026
+**Effective date:** 17 November 2026
 
 LiquidLyf is a free app that connects blood donors with people who need blood in Bangladesh. You trust
 us with your phone number and your blood group, so we collect as little as we can, show it to as few
@@ -47,14 +47,20 @@ it does with your data.
 - That you are 18 or older and accepted these terms, with the date and the version you accepted.
 
 ### Your profile
-- Full name, phone number, blood group.
+- Your full name and phone number.
+- Your area: division, district, and upazila or city corporation.
+- Your blood group, if you add it. Donors need it.
+- Your app language.
+
+If you choose to become a donor, the app also asks for:
 - Gender and birth year. We use them only to check whether you can donate and to count your rest
   period after a donation. They are never shown to other users.
 - Whether you weigh at least 45 kg (yes or no).
-- Your area: division, district, and upazila or city corporation.
 - Whether you are available to donate, and the date of your last donation.
 - Whether you chose to be listed as a donor, and when you chose it.
-- Your app language.
+
+Until you choose to become a donor, the app doesn't ask for these. Until then, two of your settings are
+simply off: being listed as a donor, and being available to donate.
 
 ### When you use the app
 - **Blood requests you post:** the patient's blood group, the blood component and number of units,
@@ -81,6 +87,11 @@ it does with your data.
 - **Crash reports:** if the app crashes, Firebase Crashlytics receives the technical details: phone
   model, Android version, app version, what the app was doing and a random installation ID. They
   contain no names, phone numbers or blood groups.
+- **Daily checks:** about once a day, the app downloads two small files from GitHub: the hospital
+  list, and the details of the newest app version, so it can tell you when an update is available. As
+  with any download, GitHub sees your phone's IP address. The app sends nothing else about you or
+  your account with these checks. When you tap **Get the update**, the app downloads the new version
+  from GitHub too, and GitHub again sees your IP address.
 
 **We don't collect** your contacts, photos, files, exact location, call logs or SMS messages. We never
 ask for your national ID (NID).
@@ -140,7 +151,7 @@ We use a few services to run LiquidLyf. They process data for us and only on our
 <tbody role="rowgroup">
 <tr role="row"><td role="cell" data-label="Provider">Google Firebase: Authentication, Cloud Firestore, Cloud Messaging, Crashlytics, Remote Config, App Check</td><td role="cell" data-label="What it does for LiquidLyf">Sign-in, the database, notifications, crash reports, app settings, abuse protection</td><td role="cell" data-label="Where">The database is in Mumbai, India. Sign-in, notifications and crash reports may be processed in other countries, including the United States</td></tr>
 <tr role="row"><td role="cell" data-label="Provider">Cloudflare Workers</td><td role="cell" data-label="What it does for LiquidLyf">Sends the request alerts to donors. When your app asks it to, it receives your user ID, the request ID, the donor’s user ID for a notification about an offer or an ask, and, like any web server, your IP address. It stores none of them. A maintainer fixing a problem can watch the calls live, with the IP address and its approximate location; that live view isn’t saved. To stop abuse, Cloudflare counts each user’s calls for 60 seconds, then forgets them. Its technical logs contain no names, phone numbers or user IDs</td><td role="cell" data-label="Where">Cloudflare’s worldwide network</td></tr>
-<tr role="row"><td role="cell" data-label="Provider">GitHub</td><td role="cell" data-label="What it does for LiquidLyf">Hosts the app download, this website and the source code. It sees your IP address when you visit</td><td role="cell" data-label="Where">United States and worldwide</td></tr>
+<tr role="row"><td role="cell" data-label="Provider">GitHub</td><td role="cell" data-label="What it does for LiquidLyf">Hosts the app download, this website and the source code. It sees your IP address when you visit, and when the app does its daily checks (section 2)</td><td role="cell" data-label="Where">United States and worldwide</td></tr>
 </tbody></table></div>
 
 Their own privacy policies: [Google](https://policies.google.com/privacy) ·
