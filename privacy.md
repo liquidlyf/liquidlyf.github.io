@@ -8,7 +8,7 @@ alternate: /bn/privacy
 
 # LiquidLyf Privacy Policy
 
-**Effective date:** 17 November 2026
+**Effective date:** 18 November 2026
 
 LiquidLyf is a free app that connects blood donors with people who need blood in Bangladesh. You trust
 us with your phone number and your blood group, so we collect as little as we can, show it to as few
