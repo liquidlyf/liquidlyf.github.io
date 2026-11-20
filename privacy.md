@@ -85,6 +85,14 @@ sign out, or once you finish the steps and they're saved to your account.
 - **Counters** that protect against abuse, such as how many open requests you have, and the last
   donor you asked to donate (only you can see it).
 - **When you last used the app,** updated at most once every 3 days.
+- **Sharing a request:** the app writes a message with the blood group and how many bags are needed,
+  the hospital and area, when it's needed, and a link. Neither the message nor the link has anyone's
+  name or phone number, and you choose who gets it. To identify the request, the link holds only a
+  random code. Browsers don't send the part of the link with the code to LiquidLyf's website (which
+  runs on GitHub), and the page the link opens shows nothing about the request. If the person who gets
+  it isn't signed in to the app yet, the app keeps the code only on their phone, to open the request
+  once they're signed in. The code is deleted once the request is open. Three days after the link was
+  tapped, it's no longer used, and it's deleted the first time the app opens after that.
 
 ### From your phone
 - **Push notifications:** your phone subscribes to notification "topics" named after your area and
