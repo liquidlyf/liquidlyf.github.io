@@ -41,8 +41,9 @@ it does with your data.
 <h2 id="s2">2. What we collect</h2>
 
 ### When you create an account
-- Your email address, and how you sign in (email and password, Google, or both). If you use Google, Google
-  shares your name, email address and profile picture link with us. We don't show the picture.
+- Your email address, and how you sign in (email and password, Google, or both). If you sign in with
+  Google, your name, email address and profile picture link come from Google into your LiquidLyf
+  account. The picture isn't shown anywhere in the app.
 - Your password is handled by Google's Firebase Authentication. We never see it.
 - That you are 18 or older and accepted these terms, with the date and the version you accepted.
 
@@ -87,8 +88,8 @@ sign out, or once you finish the steps and they're saved to your account.
 
 ### From your phone
 - **Push notifications:** your phone subscribes to notification "topics" named after your area and
-  blood group (for example, "Savar, B+"), through Google's Firebase Cloud Messaging. We don't
-  store a device token. You can stop alerts at any time (section 7).
+  blood group (for example, "Savar, B+"), through Google's Firebase Cloud Messaging. No device token
+  from your phone is stored on LiquidLyf's server. You can stop alerts at any time (section 7).
 - **App Check:** Google Play services checks that requests come from the genuine LiquidLyf app on a
   real phone. This helps us spot bots and fake apps.
 - **Crash reports:** if the app crashes, Firebase Crashlytics receives the technical details: phone
