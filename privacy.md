@@ -8,7 +8,7 @@ alternate: /bn/privacy
 
 # LiquidLyf Privacy Policy
 
-**Effective date:** 18 November 2026
+**Effective date:** 20 November 2026
 
 LiquidLyf is a free app that connects blood donors with people who need blood in Bangladesh. You trust
 us with your phone number and your blood group, so we collect as little as we can, show it to as few
@@ -60,7 +60,14 @@ If you choose to become a donor, the app also asks for:
 - Whether you chose to be listed as a donor, and when you chose it.
 
 Until you choose to become a donor, the app doesn't ask for these. Until then, two of your settings are
-simply off: being listed as a donor, and being available to donate.
+simply off: being listed as a donor, and being available to donate. When you finish the donor steps,
+your answers are saved to your account on LiquidLyf's server, even if you choose "Not now" at the last
+step.
+
+If you stop partway through the donor steps, the answers you gave so far are kept **only on your
+phone**, so you don't have to answer again later. They aren't sent to LiquidLyf's server, and they
+aren't included in your phone's backup (such as Google's). They're deleted from your phone when you
+sign out, or once you finish the steps and they're saved to your account.
 
 ### When you use the app
 - **Blood requests you post:** the patient's blood group, the blood component and number of units,
@@ -106,6 +113,7 @@ ask for your national ID (NID).
 <tr><td>Finding donors for a blood request, and alerting them</td><td>Blood group, area, availability, rest period, the request</td></tr>
 <tr><td>Letting a donor and a requester call each other</td><td>Phone numbers, only after a donor offers</td></tr>
 <tr><td>Counting your rest period and reminding you when you can donate again</td><td>Gender, birth year, last donation date</td></tr>
+<tr><td>If you aren’t listed as a donor, the app reminds you a few times, in a notification, that you can become a donor if you want</td><td>Whether you’re listed as a donor, the donor-step answers kept on your phone, and whether you have an open request (only this is checked in your account). The app makes these reminders on your phone, sends no new information to the server, and no separate information about the reminders is kept</td></tr>
 <tr><td>Running your account and showing the app in your language</td><td>Email, sign-in method, language</td></tr>
 <tr><td>Keeping people safe: stopping scams, fake requests and harassment</td><td>Reports, blocks, counters, App Check, flagged words such as payment requests</td></tr>
 <tr><td>Fixing crashes</td><td>Crash reports</td></tr>
@@ -192,6 +200,10 @@ serious harm.
   stop getting request alerts.
 - **Pause alerts:** turn off "Ready to donate" on the Home screen or in Settings, or turn off
   notifications in Android settings.
+- **Stop the reminders to become a donor:** tap "Don't remind me" on any reminder, or open Profile → ⚙
+  Settings → Notifications and turn off "Reminders to become a donor". Once you finish the donor steps,
+  they don't come any more. There are at most 7 in all, within about 4 months of creating your account,
+  and then they stop.
 - **Withdraw an offer** at any time before you donate. You then no longer see the request's contact
   details. The requester can still see the number you
   shared with that offer until it is deleted, 90 days after the request closes (section 6), and may

@@ -8,7 +8,7 @@ alternate: /bn/terms
 
 # LiquidLyf Terms and Community Guidelines
 
-**Effective date:** 18 November 2026
+**Effective date:** 20 November 2026
 
 These terms are the rules for using the LiquidLyf app. By creating an account, you agree to them and to
 our [Privacy Policy](/privacy). They are written to keep donors, patients and their families safe.
