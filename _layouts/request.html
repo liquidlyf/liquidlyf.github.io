@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{%- comment %}
+  The request-link page's layout (/r/, D31, 20 Nov 2026). One page in both languages, Bangla first:
+  the link can't say which language its reader wants, and the site has no server to ask. No menu, so
+  someone who came from a chat sees only what to do next.
+  The only page with a script (C25 a, the maintainer, 20 Nov 2026): this layout's Content-Security-Policy
+  adds script-src 'self', for /assets/r.js. Every other page keeps the default layout's policy, with
+  no scripts at all.
+{% endcomment -%}
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fffbff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1111" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  {%- comment %} The link's preview card in chat apps: the same for every request, with nothing about it. {% endcomment %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LiquidLyf">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:image" content="{{ site.url }}/assets/share-bn.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LiquidLyf: রক্ত লাগবে? কাছের রক্তদাতা খুঁজুন">
+  <meta property="og:locale" content="bn_BD">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/site.css?v={{ site.css_version }}">
+</head>
+<body class="page-doc page-request">
+  <a class="skip" href="#main">মূল লেখায় যান</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="/bn/">
+        <picture>
+          <source srcset="/assets/logo-horizontal-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="/assets/logo-horizontal.svg" alt="LiquidLyf" width="142" height="30">
+        </picture>
+      </a>
+    </div>
+  </header>
+  <main id="main" class="wrap doc req">
+    {{ content }}
+  </main>
+  <footer class="site-footer req-footer">
+    <div class="wrap">
+      <p><a href="/bn/privacy">গোপনীয়তা নীতি</a> · <a href="/privacy" hreflang="en" lang="en">Privacy Policy</a></p>
+    </div>
+  </footer>
+  <script src="/assets/r.js"></script>
+</body>
+</html>

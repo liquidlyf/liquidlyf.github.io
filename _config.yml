@@ -26,7 +26,7 @@ bn_reviewed: false
 # The stylesheet's version: build_site.py puts a hash of site.css here, and the page asks for
 # site.css?v=<hash>. GitHub Pages lets browsers keep files for 10 minutes, so without it a visitor
 # could get new pages with the old stylesheet right after a change.
-css_version: fdefbcbf82
+css_version: 425fbc5972
 
 markdown: kramdown
 kramdown:
@@ -42,3 +42,8 @@ defaults:
 
 exclude:
   - README.md
+
+# Jekyll skips folders that start with a dot. .well-known/assetlinks.json proves to Android that
+# the request links (/r/) belong to the app (D31); build_site.py writes it once the release key exists.
+include:
+  - .well-known

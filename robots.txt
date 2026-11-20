@@ -1,4 +1,5 @@
-# Every page of this site may be indexed.
+# Every page may be crawled. The request-link page (/r/) and the 404 page
+# ask not to be indexed (noindex), and aren't in the sitemap.
 User-agent: *
 Disallow:
 

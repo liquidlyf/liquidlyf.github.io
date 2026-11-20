@@ -1,0 +1,49 @@
+---
+layout: request
+lang: bn
+permalink: /r/
+noindex: true
+title: "LiquidLyf: একটি রক্তের অনুরোধ · A blood request on LiquidLyf"
+description: "বিস্তারিত দেখা যাবে LiquidLyf অ্যাপে। Its details are in the LiquidLyf app."
+---
+{%- comment %}
+  The request-link page (D31 = go, C25 = a; the maintainer, 20 Nov 2026), from D's picture
+  (ui-audit/share-link.html, "page words OK"). The app shares https://liquidlyf.github.io/r/#<ID>
+  (agreed with A, 20 Nov 2026): the ID after "#" never reaches GitHub. Android opens the link in the
+  app once /.well-known/assetlinks.json has the release key (A48). Until then, and in Facebook's or
+  Messenger's own browser, people land here, even with the app.
+  Nothing on this page is about the request. Without a script, or without a valid ID, it's C25's way b:
+  no button, and step 3 says to tap the link again. /assets/r.js shows the button and step 3a.
+  Download goes to the download page, as D drew it: it explains Chrome's warning and the
+  allow-installs step a first-time installer meets (before v1.0 it says the app isn't out yet).
+  D's Bangla lines: approved by the maintainer ("D31 BN OK", 20 Nov 2026 16:08). C28 OK (16:19): the
+  line under the button (C's, 2 blind rounds), and 2 fixes: step 2 "ইনস্টলের অনুমতি" (not "ফোন অনুমতি",
+  which could read as Android's Phone permission) and the last line "গোপনীয়তার জন্য … দেখানো হয় না"
+  (it read like an error).
+{% endcomment %}
+<h1>কেউ আপনাকে একটি রক্তের অনুরোধ পাঠিয়েছেন <span lang="en">Someone sent you a blood request</span></h1>
+<p>বিস্তারিত দেখা যাবে LiquidLyf অ্যাপে। <span lang="en">Its details are in the LiquidLyf app.</span></p>
+
+<section id="have" class="req-have" aria-labelledby="have-title" hidden>
+  <h2 id="have-title">অ্যাপ আছে? <span lang="en">Have the app?</span></h2>
+  <a class="btn" id="open" href="#have">অনুরোধটি খুলুন <span lang="en">Open the request</span></a>
+  <p class="req-small">বাটন কাজ না করলে, যে লিংক পেয়েছিলেন, সেটিতে আবার চাপ দিন। <span lang="en">If the button doesn’t work, tap the link you were sent again.</span></p>
+</section>
+
+<section aria-labelledby="no-app">
+  <h2 id="no-app" tabindex="-1">অ্যাপ নেই? <span lang="en">No app yet?</span></h2>
+  <ol class="req-steps" role="list">
+    <li><span class="req-n">১</span>
+      <div><p>LiquidLyf নামিয়ে নিন (বিনামূল্যে) <span lang="en">Download LiquidLyf (free)</span></p>
+        <a class="btn tonal" href="/bn/download">নামিয়ে নিন <span lang="en">Download</span></a></div></li>
+    <li><span class="req-n">২</span>
+      <div><p>ইনস্টল করুন। ইনস্টলের অনুমতি চাইলে দিন। <span lang="en">Install it. If your phone asks for permission to install, allow it.</span></p></div></li>
+    <li><span class="req-n">৩</span>
+      <div><p data-with-button hidden>এখানে ফিরে এসে "অনুরোধটি খুলুন" চাপুন। <span lang="en">Come back here and tap Open the request.</span></p>
+        <p data-without-button>যে লিংক পেয়েছিলেন, সেটিতে আবার চাপ দিন। <span lang="en">Tap the link you were sent again.</span></p></div></li>
+  </ol>
+</section>
+
+<p class="notice">Facebook বা Messenger-এর ভেতরে খুলেছেন? ⋮ চেপে "Chrome-এ খুলুন" বেছে নিন। <span lang="en">Opened inside Facebook or Messenger? Tap ⋮, then Open in Chrome.</span></p>
+
+<p class="req-small">গোপনীয়তার জন্য এই পাতায় অনুরোধের কোনো তথ্য দেখানো হয় না। <span lang="en">For privacy, this page shows nothing about the request.</span></p>

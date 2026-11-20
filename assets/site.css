@@ -481,6 +481,54 @@ pre {
   .cols > :last-child { grid-column: 1 / -1; }
 }
 
+/* ------------------------------------------------------------------ the request-link page (/r/)
+   Both languages on one page, Bangla first: each English part is a <span lang="en"> on its own line. */
+[hidden] { display: none !important; }
+.req h1 { margin: 1.5rem 0 0.75rem; color: var(--heading-accent); font-size: 1.6rem; }
+.req h2 { margin: 2rem 0 0.75rem; font-size: 1.2rem; }
+.req :is(h1, h2, p) > [lang="en"] { display: block; color: var(--muted); font-size: 0.92em; font-weight: 400; }
+.req .btn {
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  max-width: 100%;
+  min-height: 56px;
+  padding: 6px 24px;
+  line-height: 1.35;
+  text-align: center;
+}
+.req .btn > [lang="en"] { font-size: 0.85em; font-weight: 400; }
+/* The second button on the page: a softer fill, with an edge that shows in both themes. */
+.btn.tonal { background: var(--tint); color: var(--fg); border-color: var(--outline); box-shadow: none; }
+.btn.tonal:hover, .btn.tonal:active { background: var(--notice); }
+.req-steps { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.1rem; margin: 0; padding: 0; list-style: none; }
+.req-steps li { display: flex; gap: 14px; align-items: flex-start; }
+/* min-width: 0 lets the step's text and button wrap at 200% text instead of running off the page. */
+.req-steps li > div { flex: 1; min-width: 0; }
+/* Very narrow (a small phone with large text): the number goes above its step, so the button fits. */
+@media (max-width: 22rem) {
+  .req-steps li { flex-direction: column; gap: 6px; }
+}
+.req-steps p { margin: 0.3rem 0 0; }
+.req-steps .btn { margin-top: 0.75rem; }
+.req-n {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--notice);
+  color: var(--fg);
+  font-weight: 700;
+}
+.req .notice > [lang="en"] { display: block; }
+.req-small { color: var(--muted); font-size: var(--small); }
+.req-have .req-small { margin-top: 0.75rem; }
+.req-footer { padding: 1.25rem 0; }
+.req-footer p { margin: 0; }
+.req-footer a { display: inline-flex; align-items: center; min-height: 44px; }
+
 /* Colour changes fade quickly (only colours move, so this is safe with reduced motion too). */
 .btn, .lang, .site-nav a { transition: background-color 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out; }
 
