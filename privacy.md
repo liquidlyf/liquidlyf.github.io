@@ -46,6 +46,12 @@ it does with your data.
   account. The picture isn't shown anywhere in the app.
 - Your password is handled by Google's Firebase Authentication. We never see it.
 - That you are 18 or older and accepted these terms, with the date and the version you accepted.
+- **If you change your email address:** it changes only once you open the link sent to the new address
+  (by Google's Firebase Authentication). Until then, the app also keeps the new email address on your
+  phone, to show that the change is waiting for you to confirm it. The address kept on your phone is
+  deleted when the change is confirmed, when you ask to change to a different address, or when you
+  sign out. Three days after you asked for the change, it's no longer shown, and it's deleted the
+  first time the app opens after that.
 
 ### Your profile
 - Your full name and phone number.
